@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Maru.label>Maru</Maru.label>
+  <Maru.description>이름모를 문명의 폐허 위에서 살아가는 종족입니다. 극북인, 설인 이라고도 불리며 넓은 반경에 걸쳐 소규모 사회를 이루어 삽니다.</Maru.description>
+  <Maru.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Maru.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Maru.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Maru.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Maru.tools.0.label>left claws</Maru.tools.0.label>
+  <Maru.tools.1.label>right claws</Maru.tools.1.label>
+  <Maru.tools.2.label>Teeth</Maru.tools.2.label>
+</LanguageData>

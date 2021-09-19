@@ -1,0 +1,2157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <AlienRace.BackstoryDef Name="MaruBackStory" Abstract="True">
+		<disallowedTraits>
+      <li>
+        <defName>SpeedOffset</defName>
+        <degree>-1</degree>
+        <chance>100</chance>
+      </li>
+		</disallowedTraits>
+    <forcedHediffs>
+    </forcedHediffs>
+    <forcedTraits>
+      <li>
+        <defName>Maru_flameworship</defName>
+        <chance>100</chance>
+      </li>
+    </forcedTraits>
+	<bodyTypeMale>Female</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+  </AlienRace.BackstoryDef>
+
+  <!--
+  [PAWN_nameDef]
+  [PAWN_pronoun]
+  
+  Shooting
+  Melee
+  Construction
+  Mining
+  Cooking
+  Growing
+  Animal
+  Crafting
+  Artistic
+  Medicine
+  Social
+  Intellectual
+  
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+		<defName></defName>
+		<title></title>
+		<titleShort></titleShort>
+		<baseDescription></baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+      <li>
+        <defName></defName>
+        <amount></amount>
+      </li>
+		</skillGains>
+    <forcedTraits>
+    <li>
+      <defName></defName>
+      <degree></degree>
+    </li>
+  </forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MRALL</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+  
+      <li>MRALL</li>
+      <li>MR_Hunter</li> -모성
+      <li>MR_MW</li> -중세
+      <li>MR_GW</li> -번화
+      <li>MR_SP</li> -우주
+  --><!-- 마루 배양설표 -->
+
+  <!-- 유년기 -->
+
+  <!-- 모성 백스 -->
+  
+<!-- 마루 배양설표 -->
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+		<defName>Maru_MH_CulturedBaby</defName>
+		<title>마루 배양설표</title>
+		<titleShort>배양설표</titleShort>
+		<baseDescription>[PAWN_nameDef]의 첫 번째 기억은 어두컴컴한 인큐베이터 속입니다. 아무것도 모르는 채로 얼어붙은 모성에 내던져진 [PAWN_pronoun]은 어떻게든 스스로 살아남는 법을 찾아냈습니다.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+		</skillGains>
+    <forcedTraits>
+    <li>
+      <defName>Neurotic</defName>
+      <degree>1</degree>
+    </li>
+  </forcedTraits>
+		<workDisables>
+		</workDisables>
+		<spawnCategories>
+			<li>MRALL</li>
+			<li>MR_MH</li>
+			<li>MR_Child</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+  <!-- 마루 모성 방랑자 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_Vagabond</defName>
+    <title>마루 모성 방랑자</title>
+    <titleShort>방랑자</titleShort>
+    <baseDescription>얼어붙은 모성, 검게 타버린 솟대들 사이에서 [PAWN_nameDef]은 깨어났습니다. 비록 그 전에 어떤 일이 있었는지는 하나도 떠올릴 수 없었지만, 단 한 가지, 절망적인 상황에서 낙천적으로 살아가는 방법만은 알고 있었습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+      <li>
+        <defName>NaturalMood</defName>
+        <degree>2</degree>
+      </li>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 책벌레 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_Bookworm</defName>
+    <title>마루 책벌레</title>
+    <titleShort>책벌레</titleShort>
+    <baseDescription>[PAWN_nameDef]은 젖을 떼고 난 뒤부터 항상 종이 무더기에 파묻혀 살았습니다. 그 척박한 모성에서 피 냄새보다 종이 냄새에 익숙한 몇 안 되는 마루 중 하나입니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+    <forcedTraits></forcedTraits>
+    <workDisables></workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!--  마루 산지기의 아이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_KeepersChild</defName>
+    <title>마루 산지기의 아이</title>
+    <titleShort>산지기의 아이</titleShort>
+    <baseDescription>자신의 힘을 증명하고 한 산의 주인이 된 [PAWN_nameDef]의 부모는 [PAWN_pronoun]에게 자신이 알고 있는 모든 것을 알려주었습니다. 치명상을 입지 않고 동물들을 상대하는 법, 몸을 효율적으로 사용하는 법, 심지어는 밤에 잠꼬대하지 않는 법까지 전부 말이죠.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 공학도 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_LittleEngineer</defName>
+    <title>마루 공학도</title>
+    <titleShort>공학도</titleShort>
+    <baseDescription>[PAWN_nameDef]은 어렸을 때부터 유난히 기계에 많은 관심을 보였습니다. 망가진 배관들을 손톱으로 자르고 이리저리 묶어 처음으로 작동하는 무언가를 만들었을 때의 성취감은 그 후의 [PAWN_pronoun]가 선택하는 모든 일에 큰 영향을 주었습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 농사꾼의 아이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_FarmersChild</defName>
+    <title>마루 공학도</title>
+    <titleShort>공학도</titleShort>
+    <baseDescription>마루들의 모성에서 농사를 짓기 위해선 크게 세 가지가 필요합니다. 첫 번째는 온도가 유지되는 투명한 온실, 두 번째는 농사에 대한 기초적인 지식, 그리고 세 번째는 따뜻한 곳을 발견하고 달려드는 짐승들을 막을 수 있는 무력입니다. 공교롭게도 [PAWN_nameDef]의 부모는 그 모든 것들을 가지고 있었고, [PAWN_pronoun] 또한 자신과 같은 별종이 되길 원했습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 꼬마 요리사 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_LittleChef</defName>
+    <title>마루 꼬마 요리사</title>
+    <titleShort>꼬마 요리사</titleShort>
+    <baseDescription>마루들의 사회에서 요리는 사냥을 포함합니다. 그리고 극지의 땅에서 음식을 나눌 수 있는 권한을 가진 요리사는, 무리 내에서의 영향력, 즉 권력을 상징합니다. 누구나 어릴 적에 대통령이 되는 상상을 하듯이, 이 어린 마루는 요리사를 꿈꾸며 종이 앞치마를 두르고 푸주칼을 휘둘렀습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 병약한 아이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_SickChild</defName>
+    <title>마루 병약한 아이</title>
+    <titleShort>병약한 아이</titleShort>
+    <baseDescription>척박한 마루들의 모성에서는 병약하게 태어난 아이는 버려집니다. [PAWN_nameDef]의 부모 또한 다른 마루들과 별반 다를 바 없는 선택을 했고, [PAWN_pronoun]은 약한 몸으로 얼어붙은 행성에서 살아남기 위해 더욱더 영악해져야 했습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+      <li>
+        <defName>Immunity</defName>
+        <degree>-1</degree>
+      </li>
+      <li>
+        <defName>Cannibal</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 꼬마 사냥꾼 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_LittleHunter</defName>
+    <title>마루 꼬마 사냥꾼</title>
+    <titleShort>꼬마 사냥꾼</titleShort>
+    <baseDescription>때때로 어린 마루들은 자신의 생존을 위해 어렸을 때부터 본격적인 사냥을 시작하기도 합니다. 물론 그런 마루들은 대부분 인공 배양기에서 갓 깨어난 고아 마루들이지만, [PAWN_nameDef]의 경우는 사냥감에게 부모를 잃어 고아가 됐다는 점에서 조금 달랐습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 별종 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_Abnormal</defName>
+    <title>마루 별종</title>
+    <titleShort>별종</titleShort>
+    <baseDescription>하루하루 살아가기도 급급한 마루들의 모성에서 예술이란, 불가시한 행복을 위해 내일 먹을 음식을 버리는, 대체로 이해받지 못하는 행위입니다. 하지만 이 마루는 도톰한 손가락 끝으로 무언가를 만드는 일에 항상 열중해 있었고, 그런 일을 하며 기른 손의 섬세함은 결과적으로 다른 많은 일에 도움이 되었습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 상단 부단장 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_ViceGeneral</defName>
+    <title>마루 상단 부단장</title>
+    <titleShort>부단장</titleShort>
+    <baseDescription>[PAWN_nameDef]은 무려 네 명의 인원으로 이뤄진 상단의 부단장이었습니다. 단장인 흰 곰이 보따리를 짊어지고, 나머지 부하 조직원인 흰 여우 두 마리가 주변을 정찰하면 [PAWN_pronoun]은 곰의 등에 타서 흥정을 맡았습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 점주 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_Storekeeper</defName>
+    <title>마루 점주</title>
+    <titleShort>점주</titleShort>
+    <baseDescription>돌아오지 않는 부모를 찾아다니다가 먹을 것도 거의 떨어져 갈 때쯤, [PAWN_nameDef]은 운 좋게도 내부가 거의 멀쩡한 건물을 찾아냈습니다. 그 안에는 수많은 보존 식량들이 있었고, 이것만 있으면 [PAWN_pronoun]의 부모도 굳이 위험한 사냥을 하지 않아도 될 것처럼 보였습니다. 비록 아직도 [PAWN_pronoun]의 부모는 돌아오지 않고 있지만, 언젠가 지나가던 길에라도 이곳을 돌아볼 수 있도록 [PAWN_pronoun]은 주변을 돌아다니면서 주운 온갖 잡동사니를 진열대에 늘어놓고 손님들을 기다렸습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 솟대 지킴이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_Sotdaekeeper</defName>
+    <title>마루 솟대 지킴이</title>
+    <titleShort>솟대 지킴이</titleShort>
+    <baseDescription>[PAWN_nameDef]은 솟대에 대한 강한 애정을 품고 있습니다. 과거의 선조들이 남긴 유일한 예술품 이라는 게 첫 번째 이유고, 이 근처 산에서 그걸 처음 발견한 자신이 자랑스러운 게 두 번째 이유입니다. 첫 번째 이유는 스스로 생각한 건지조차 의심스럽지만, 아무튼 이 마루가 남는 시간에는 항상 자신이 발견한 솟대 옆을 지키고 서 있다는 것만은 사실입니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 정상배양	-->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MH_NormalCulture</defName>
+    <title>마루 정상배양</title>
+    <titleShort>정상배양</titleShort>
+    <baseDescription>[PAWN_nameDef]은 어두컴컴한 배양관 속에서 여러 지식들을 주입받으며 자라났습니다. 바깥세상에 대해 잘 알진 못했지만, 어쩌면 이편이 밖에서 얼어붙거나 굶거나, 사냥당해 죽는 것보다는 나았을 겁니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MH</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- 변방 백스 -->
+  
+  <!-- 마루 예언자 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_prophet</defName>
+    <title>마루 예언자</title>
+    <titleShort>예언자</titleShort>
+    <baseDescription>어느 외딴 행성에서 눈을 뜬 [PAWN_nameDef]은 그곳 부족의 일원으로, 정확히는 그들의 숭배 대상으로써 그들의 사회에 섞여 들어갔습니다. 마루 특유의 특이한 외형은 [PAWN_pronoun]의 말에 종교적인 설득력을 더해주었고, [PAWN_pronoun] 스스로도 그들을 만족시키기 위해 관찰에 관찰을 더해 최대한 설득력 있는 예언을 짜내었습니다. 그리고 이 행성의 예언자는 성인이 되면 버려진다는 사실을 안 것은 먼 나중의 일이었습니다.
+    </baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables> 
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 가출 부족민 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_Runawaytribe</defName>
+    <title>마루 가출 부족민</title>
+    <titleShort>가출 부족민</titleShort>
+    <baseDescription>[PAWN_nameDef]가 속한 행성에 존재하던 부족은 유전자 개조 시술을 받은 타 행성 출신 인간들이 많았던 점을 고려해도 매우 개방적이었습니다. 아니, 정확히 말하면 부족이라기보다도 극단적 환경주의자에 가까운 사람들이었습니다. 어렸을 때 그들 무리에게 발견되어 온갖 잡초만 먹고 자라던 [PAWN_pronoun]은 결국 가출에까지 이르게 되었지만, 덕분에 작물에 대한 지식만은 거의 전문가 수준에 이르렀습니다.
+    </baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 똑똑한 아이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_Smartkid</defName>
+    <title>마루 똑똑한 아이</title>
+    <titleShort>똑똑한 아이</titleShort>
+    <baseDescription>[PAWN_nameDef]은 마루들로 이루어진 작은 부족 무리에서 자랐습니다. 어떤 일을 하든 노력하지 않아도 좋은 결과가 따라와 어렸을 적부터 천재라는 꼬리표를 달고살았던 [PAWN_pronoun]은, 결국 모든 일에 대한 흥미를 잃어버리고 말았습니다.
+    </baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 꼬마설인 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_LittleYeti</defName>
+    <title>마루 꼬마설인</title>
+    <titleShort>꼬마설인</titleShort>
+    <baseDescription>[PAWN_nameDef]은 마루들로 이루어진 작은 부족 무리에서 자랐습니다. 어려서부터 호기심이 많아 눈밭을 뛰어다니며 거주지 바깥의 산을 오르락내리락 하는 모습은 때때로 산 밑 인간들의 눈에 띄어 수많은 소문을 만들어내기도 했습니다. </baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 후계자 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_successor</defName>
+    <title>마루 후계자</title>
+    <titleShort>후계자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 마루들로 이루어진 작은 부족 무리에서 자랐습니다. 약초를 분류하고 채집하는데 두각을 보인 [PAWN_pronoun]은, 곧 제사장의 후계자로서 의식을 위한 여러 지식들을 머리에 담을 수 있었습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 수습 사냥꾼 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_ApprenticeHunter</defName>
+    <title>마루 수습 사냥꾼</title>
+    <titleShort>수습 사냥꾼</titleShort>
+    <baseDescription>[PAWN_nameDef]은 마루들로 이루어진 작은 부족 무리에서 자랐습니다. 항상 투창 더미를 들고 사냥을 나가는 어른들을 끈질기게 쫒아 나선 [PAWN_pronoun]은, 그 고집에 못 이긴 어른들에게 수습 사냥꾼으로 인정받고 여러 기술들을 배웠습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 복수귀 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_Revenant</defName>
+    <title>마루 복수귀</title>
+    <titleShort>복수귀</titleShort>
+    <baseDescription>[PAWN_nameDef]은 마루들로 이루어진 작은 부족 무리에서 자랐습니다. 하지만 어느 날, [PAWN_pronoun]가 잠깐 마을을 벗어난 사이 수많은 인간들이 마루들의 마을로 몰아닥쳤고 [PAWN_pronoun]은 가까스로 목숨을 건졌지만, 그곳에는 누군가가 살았다는 흔적조차 남지 않게 되었습니다. 이 어린 마루는 산 밑 인간들에 대한 복수를 다짐했고, 그것 외에는 아무것도 눈에 들어오지 않았습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+      <li>
+        <defName>Bloodlust</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 산 밑 아이 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MW_Humanchild</defName>
+    <title>마루 산 밑 아이</title>
+    <titleShort>산밑아이</titleShort>
+    <baseDescription>이 마루는 인간들의 손에 의해 키워졌습니다. 마루의 짐승과 닮은 용모를 이 마루의 양부모는 오히려 장점으로 여겼고, 이들의 사랑과 보살핌으로 [PAWN_pronoun]은 마루의 본성을 죽이고 다른 인간들과 어울려 살아갈 수 있게 되었습니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_MW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- 번화계 백스 -->
+  
+  <!-- 마루 장인의 제자 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_GW_MastersDisciple</defName>
+    <title>마루 장인의 제자</title>
+    <titleShort>장인의 제자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 번화한 행성의 유명한 장인에게 입양되었습니다. 비록 태생적 한계로 인간과 같은 세밀한 작업은 하기 어려웠지만, 바로 그렇기에 장인의 선전을 위해 더 많은 교육을 받고 자랐습니다.
+    </baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_GW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- 마루 방랑자 -->
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_GW_Mastersdisciple</defName>
+    <title>마루 방랑자</title>
+    <titleShort>방랑자</titleShort>
+    <baseDescription>버려진 우주선 잔해 속에서 눈을 뜬 [PAWN_nameDef]은 행성 곳곳을 떠돌아다녔습니다. 기나긴 방랑 생활의 끝에 무언가 알아낸 것이 있다면, 그것은 바로 부유해 보이는 사람에게 눈을 치켜뜨고 꼬리를 살랑거리면 그날의 끼니는 굶지 않을 수 있다는 것입니다.</baseDescription>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <forcedTraits>
+    </forcedTraits>
+    <workDisables>
+    </workDisables>
+    <spawnCategories>
+      <li>MRALL</li>
+      <li>MR_GW</li>
+	  <li>MR_Child</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- 성년기 -->
+
+<!-- 1 -->
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+  <defName>Maru_Hunter</defName>
+  <title>마루 사냥꾼</title>
+  <titleShort>마루 사냥꾼</titleShort>
+  <baseDescription>마루 대부분은 성장하면서 사냥에 대한 깊은 갈망을 느낍니다.\n이 마루는 전문 사냥꾼으로서 다른 마루들에게 평소에 일정분의 식량을 받고, 근처에 고래 같은 위협적인 사냥감이 나타났을 때 대신 처리해주는 일을 하고 있습니다.</baseDescription>
+  <slot>Adulthood</slot>
+  <skillGains>
+    <li>
+		<defName>Shooting</defName>
+		<amount>1</amount>
+    </li>
+	<li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+    </li>
+  </skillGains>
+  <workDisables>
+  </workDisables>
+  <forcedHediffs>
+  </forcedHediffs>
+  <spawnCategories>
+    <li>MRALL</li>
+	<li>MR_Adult</li>
+  </spawnCategories>
+</AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_mountainkeeper</defName>
+    <title>마루 산지기</title>
+    <titleShort>마루 산지기</titleShort>
+    <baseDescription>일부 마루는 성장 과정에서 사냥에 대한 깊은 갈망을 느낍니다.\n이 마루는 그 경향이 특히 강했으며, 더 만족스러운 사냥감을 찾기 위해 무리를 떠나 행성 이곳저곳을 떠돌아다니고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_whaler</defName>
+    <title>마루 포경꾼</title>
+    <titleShort>마루 포경꾼</titleShort>
+    <baseDescription>삼안고래라고 불리는, 하늘을 나는 고래는 마루들에게 있어 마치 지진과 해일처럼 경외심을 불러일으키는 존재였습니다.\n어렸을 적 고래가 새파란 에테르 물결을 일으키며 하늘을 나는 모습을 본 [PAWN_nameDef]은 언젠가 그 고래를 자신의 손으로 떨어뜨리고 싶어했고, 지금은 고래를 전문적으로 사냥하는 포경꾼이 되었습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	   <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+	   <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_chef</defName>
+    <title>마루 요리사</title>
+    <titleShort>마루 요리사</titleShort>
+    <baseDescription>[PAWN_nameDef]은 격식 있는 복장을 차려입고 사냥감들을 조리하는 요리사입니다.\n요리는 항상 무리 내에서 가장 영향력 있는 마루만이 맡을 수 있었으며, 이 마루는 거듭된 사냥을 통해 자신을 증명하고 요리사라는 직책을 갖게 되었습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_merchantchief</defName>
+    <title>마루 상단 단장</title>
+    <titleShort>마루 상단 단장</titleShort>
+    <baseDescription>이 괴팍하고 자존심 센 마루는 무리를 떠나 자신만의 상단을 만들기로 했습니다.\n비록 모성의 인구수 자체가 적은 탓에 파는 물건보다 쓰는 물건이 더 많다는 건 인정할 수밖에 없지만, 적어도 먹다 남은 고기 조각을 가지고 다른 마루들과 다투던 시절보다는 자유로웠습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_artist</defName>
+    <title>마루 예술가</title>
+    <titleShort>마루 예술가</titleShort>
+    <baseDescription>[PAWN_nameDef]은 예술가입니다.\n항상 다른 마루들의 식량을 조금씩 나눠 받으며 온갖 물건들로 예술품을 만들어주는 [PAWN_nameDef]은, 예술적 기질은 넘쳐나지만 사냥에 대한 것들은 전부 잊어버렸습니다..</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_mechanic</defName>
+    <title>마루 기계 기술자</title>
+    <titleShort>마루 기계 기술자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 주로 마루들과 사리의 특성을 접합시킨 사냥 도구들을 연구하고 만들어냅니다.\n하늘을 나는 고래를 숭배의 대상에서 사냥감의 위치까지 떨어뜨리는데 지대한 공을 세웠고, 지금까지도 [PAWN_nameDef]가 만든 작살들은 수많은 마루들이 애용하고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_Sarirainterpreter</defName>
+    <title>마루 사리 해석가</title>
+    <titleShort>마루 사리 해석가</titleShort>
+    <baseDescription>[PAWN_nameDef]은 수많은 도구를 이용해 사리를 해석하고, 거기서 추출해낸 기술로 다시 수많은 도구를 만들어내어 사리를 해석합니다.\n사리의 해석을 통한 기술의 발견은 언젠가 마루들이 그들의 선조와 같은 위치에서 세상을 바라볼 수 있도록 할 거라고 [PAWN_nameDef]은 굳게 믿고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_biotechnician</defName>
+    <title>마루 생체 기술자</title>
+    <titleShort>마루 생체 기술자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 사리에서 발견한 모든 생체 관련 기술들을 정리하고, 응용하고, 개선하는 기술자입니다.\n수많은 하이퍼보리아 설표들을 배양해 왔으며, 그것들의 유전적 개선안도 꾸준히 제시하였고, 대부분 채택되어 오늘날의 애교를 부리는 설표가 탄생하게 되었습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_Sariratechnician</defName>
+    <title>마루 사리 기술자</title>
+    <titleShort>마루 사리 기술자</titleShort>
+    <baseDescription>사리 기술자들은 사리 그 자체의 특성에 주목하여 여러 새로운 기술을 만들어내는 마루들입니다.\n[PAWN_nameDef]은 언제나 사리 해석가들과 반목해왔으며, 더 많은 사리를 얻기 위해 고아가 된 마루 아이들을 입양하거나, 인간들에게 잡혀 노예가 된 마루들을 사들이기도 했습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_motherplanetfarmer</defName>
+    <title>마루 모성 농사꾼</title>
+    <titleShort>마루 모성 농사꾼</titleShort>
+    <baseDescription>모성의 농사꾼에게 가장 중요한 것을 서열로 나타내자면 무력이 1위, 장소가 2위, 그리고 농사 지식은 3위에 불과합니다.\n물론 다른 마루들보단 농사에 대한 지식이 풍부하겠지만, 타 행성의 농사꾼에 비하면 그리 풍부한 편도 아닙니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_archaeologist</defName>
+    <title>마루 고고학자</title>
+    <titleShort>마루 고고학자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 튼튼한 발톱으로 건물의 잔해를 헤집고 과거의 유물을 발굴해내는 게 직업입니다.\n사실 누군가가 그걸 직업으로 인정해준 적은 없지만, 적어도 본인 스스로는 그렇게 생각하고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_pontiff</defName>
+    <title>마루 제사장</title>
+    <titleShort>마루 제사장</titleShort>
+    <baseDescription>[PAWN_nameDef]은 부족의 모든 의식을 총괄합니다.\n수많은 마루들의 장례식과 제사, 더 나아가 마을의 축제까지도 모두 [PAWN_nameDef]의 역할에 포함됩니다.\n직접 사냥을 다니고 싶은 욕구를 참는 건 힘든 일이지만, [PAWN_nameDef]은 나름의 사명감을 가지고 일을 해나가고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_Hunter_B</defName>
+    <title>마루 사냥꾼</title>
+    <titleShort>마루 사냥꾼</titleShort>
+    <baseDescription>[PAWN_nameDef]은 우수한 사냥꾼입니다.\n은밀하고 재빠르게 사냥감에 접근해서, 단 한 번의 일격으로 확실히 숨통을 끊어버리는데 숙달된 [PAWN_nameDef]은 절대 사냥감을 놓친 적이 없습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_tracker</defName>
+    <title>마루 추적자</title>
+    <titleShort>마루 추적자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 부족의 추적자입니다.\n주로 죄를 짓고 도망간 마루나 간간이 보이는 인간 습격자들을 추적해서 아무도 모르게 제거하는 역할을 맡으며, 평상시에는 길을 잃은 어린 마루들을 찾아내서 보호하는 일도 겸하고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_spook</defName>
+    <title>마루 기인</title>
+    <titleShort>마루 기인</titleShort>
+    <baseDescription>[PAWN_nameDef]의 정체는 아무도 모릅니다.\n모성의 마루라는 소문도 있고, 짐승들에게 길러졌다는 소문도 있고, 심지어는 산 밑 인간 마을에서 죄를 짓고 도망쳐 나온 마루라는 소문도 있습니다.\n그리고 가장 수상한 점은, 이런 소문들을 이상할 정도로 신경 쓰지 않는다는 점입니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_vagabond</defName>
+    <title>마루 방랑자</title>
+    <titleShort>마루 방랑자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 행성 이곳저곳을 목적 없이 떠돌아다니고 있습니다.\n[PAWN_nameDef] 자신도 어떤 가치를 쫒아 발을 계속 움직이게 두는 건지는 모르지만, 한 가지 확실한 건 저 지평선 너머에는 반드시 새로운 것이 [PAWN_nameDef]을 기다리고 있다는 것 입니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_trainer</defName>
+    <title>마루 조련사</title>
+    <titleShort>마루 조련사</titleShort>
+    <baseDescription>그 어떤 포악한 동물도 [PAWN_nameDef]의 손을 거치면 새끼고양이처럼 변합니다.\n짐승들의 야생성을 유지한 상태로 유대감을 형성하는데 도가 튼 [PAWN_nameDef]은, 어쩌면 음식을 구해오는데 전문 사냥꾼보다 더 많은 공을 세웠을지도 모릅니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_tribal</defName>
+    <title>마루 부족민</title>
+    <titleShort>마루 부족민</titleShort>
+    <baseDescription>[PAWN_nameDef]은 평범한 부족민입니다.\n약간의 사냥 기술을 알고 있으며, 일상에 필요한 약을 만들고, 터진 옷을 꿰매고, 그리고 굳이 말로 표현하지 않아도 되는 수많은 일을 할 수 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_farmer</defName>
+    <title>마루 농사꾼</title>
+    <titleShort>마루 농사꾼</titleShort>
+    <baseDescription>[PAWN_nameDef]은 부족의 몇 안 되는 농사꾼입니다.\n본래 농사보단 사냥을 선호하는 마루들이지만, 모성과는 다르게 겨울이 오면 모든 생물의 활동이 멈추는 이곳에선 농사꾼들의 손을 빌리곤 합니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Animals</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_blacksmith</defName>
+    <title>마루 대장장이</title>
+    <titleShort>마루 대장장이</titleShort>
+    <baseDescription>[PAWN_nameDef]은 철을 달구고 삶을 제련합니다.\n튼튼하고 오래 사용할 수 있도록, 결정적인 상황에 망가지지 않도록, 평소에도 가지고 다닐 수 있을 정도로 가볍도록.\n이 세 가지 목적을 위해 밤낮없이 이어진 망치질은, 수많은 마루 영웅담의 기반이 되었습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_Cleaner</defName>
+    <title>마루 청소부</title>
+    <titleShort>마루 청소부</titleShort>
+    <baseDescription>[PAWN_nameDef]은 암흑가의 청소부입니다.\n한번 정한 목표는 절대 놓치는 일이 없으며, 마치 사냥을 하듯 집요하게 사냥감을 추적하는 모습으로 악명을 떨쳤습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_manager</defName>
+    <title>마루 점장</title>
+    <titleShort>마루 점장</titleShort>
+    <baseDescription>여러 일을 거쳐 마침내 [PAWN_nameDef]은 자신만의 레스토랑을 갖게 되었습니다.\n점장으로서의 위엄을 위해 멋대로 요동치는 꼬리는 잠시 묶어둘 필요가 있겠지만, 이제 [PAWN_nameDef]은 자기 자신의 끈이 아니라면 그 어디에도 얽매이지 않을 것 입니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_firstclasschef</defName>
+    <title>마루 일류 요리사</title>
+    <titleShort>마루 일류 요리사</titleShort>
+    <baseDescription>[PAWN_nameDef]은 일류 요리사입니다.\n마루 특유의 예민한 감각을 온전히 요리에 사용할 줄 아는 [PAWN_nameDef]은, 음식의 맛을 극한까지 끌어올려 많은 미식가에게 감동을, 예술가에겐 영감을 선사했습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-3</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_employee</defName>
+    <title>마루 회사원</title>
+    <titleShort>마루 회사원</titleShort>
+    <baseDescription>[PAWN_nameDef]은 평범한 영업사원입니다.\n최면을 걸듯 꼬리를 살랑이며 다른 사람을 입맛대로 조리하는데 능통한 [PAWN_nameDef]은 명백히 평범한 회사원의 재목은 아니지만, 어쨌거나 본인 스스로는 그렇게 생각하고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_sniper</defName>
+    <title>마루 저격수</title>
+    <titleShort>마루 저격수</titleShort>
+    <baseDescription>[PAWN_nameDef]은 초인적인 시력을 가진 베테랑 저격수입니다.\n수많은 전장을 넘나들며 저격수로 이름을 날렸으며, 파란과 사신이 들어간 별명 수십 개는 얻었습니다.\n어느 곳에선 전쟁을 위해 개조된 군인이라는 말도 있고, 어느 곳에선 아예 인간이 아니라는 말도 있습니다.\n사실, 정말로 인간이 아니긴 하지만 말이죠.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_zookeeper</defName>
+    <title>마루 사육사</title>
+    <titleShort>마루 사육사</titleShort>
+    <baseDescription>[PAWN_nameDef]은 뛰어난 사육사입니다.\n비록 담당 동물들과 필요 이상의 유대를 쌓는다는 점은 단점일 수도 있지만, 몇몇 동물들에 한해선 대체할 수 없을 정도의 인력이 되기도 합니다.\n가끔 우리 밖보단 안에 있는 편이 더 어올릴 거라는 말을 듣기도 하지만, 아직 [PAWN_nameDef]은 사육사의 일을 하며 보람을 느끼고 있습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	   <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_slave</defName>
+    <title>마루 사리 노예</title>
+    <titleShort>마루 사리 노예</titleShort>
+    <baseDescription>[PAWN_nameDef]은 성인이 된 뒤로 한 번도 햇빛을 본 적이 없습니다.\n마치 형틀과도 같은 거대한 기계에 묶여서 강제로 의식주를 제공받고, 그 대가로 사리를 착취당했습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-1</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+	  <li>
+        <defName>Plants</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_worker</defName>
+    <title>마루 노동자</title>
+    <titleShort>마루 노동자</titleShort>
+    <baseDescription>항상 아침 일찍 공사장으로 일을 나서는 [PAWN_nameDef]은 유난히 활기찬 마루입니다.\n평범한 인간의 4배가 넘는 근력으로 그 평범한 인간과 같은 양의 일을 하니 그런 것일 수도 있지만, 아무튼 [PAWN_nameDef]은 일을 하는 하루하루가 즐겁습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Mining</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_planetbroker</defName>
+    <title>마루 행성 중계자</title>
+    <titleShort>마루 행성 중계자</titleShort>
+    <baseDescription>[PAWN_nameDef]는 행성과 위성의 연락을 담당하는 행성 중계자입니다.\n오직 목소리와 목소리가 오가는 일터에서, [PAWN_nameDef]은 종의 차이를 벗어나 진정한 안락함을 느낍니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+	   <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_motherplanetexplorer</defName>
+    <title>마루 모성 탐구자</title>
+    <titleShort>마루 모성 탐구자</titleShort>
+    <baseDescription>[PAWN_nameDef]은 꽤 오랜 시간 마루의 모성에 대해 연구했습니다.\n갑자기 사라진 선조들, 급격히 바뀐 기후, 그리고 거기서 나타난 마루들까지 어느 하나 명확히 설명할 수 있는 게 없었지만, 작은 단서라도 발견하기 위해 모성으로 향하는 수송선에 몸을 실었습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+	  <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_fashionmodel</defName>
+    <title>마루 패션모델</title>
+    <titleShort>마루 패션모델</titleShort>
+    <baseDescription>[PAWN_nameDef]은 유명한 패션모델입니다.\n우월한 비율과 개성 있는 얼굴은 기본이고, 새하얀 털과 어두운 곳에서 은은히 빛나는 눈동자, 자유자재로 움직일 수 있는 귀와 꼬리는 [PAWN_nameDef]의 모델로서의 표현력에 한층 더 강한 개성을 부여해주었습니다.\n정적인 우아함과 아름다움, 동적인 귀여움과 공포스러움 등의 인상을 자유자재로 다룰 수 있는 [PAWN_nameDef]은 사교적인 영역에서까지 그 역량을 발휘하곤 합니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_scientistassistant</defName>
+    <title>마루 과학자의 조수</title>
+    <titleShort>마루 과학자의 조수</titleShort>
+    <baseDescription>[PAWN_nameDef]은 괴팍한 인간 과학자의 조수입니다.\n사실, 조수라기보단 연구실의 마스코트 적인 존재로 커피를 따르거나 문서들을 보기 좋게 정리하는 일을 제외하면 딱히 하는 일도 없습니다.\n할 일이 없어 심심했던 [PAWN_nameDef]은 커피 타기의 극의를 깨우치기 위해 여러 향신료나 조미료를 넣어본다던가, 문서를 정리하고 한 번씩 검토하며 읽어보는 일들을 시도해 봤습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_prostitute</defName>
+    <title>마루 매춘부</title>
+    <titleShort>마루 매춘부</titleShort>
+    <baseDescription>[PAWN_nameDef]은 유곽에서 일하는 매춘부입니다.\n인류의 역사와 함께 해오던 매춘은, 선지자가 죽고 수십 세기가 지난 지금 인간이 아닌 종족에게까지 일자리를 내주었습니다.\n마루 특유의 외형은 몇몇 마니아들에게 잘 먹혀들어 [PAWN_nameDef]에게 적당한 부를 가져다주었지만, 지갑에 쌓인 돈이 많아질수록 [PAWN_nameDef]의 감정은 서서히 죽어갔습니다.\n이에 두려움을 느낀 [PAWN_nameDef]은 한동안 일을 하지 않고 버티다가 마지막 남은 돈을 끌어모아 먼 변방계 행성으로 향하는 우주선에 탑승했습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Medicine</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_craftsman</defName>
+    <title>마루 장인</title>
+    <titleShort>마루 장인</titleShort>
+    <baseDescription>[PAWN_nameDef]은 다양한 물건에서 새로운 가치를 창출해냅니다.\n이 마루가 도톰한 손끝으로 부리는 마술은 감히 그 어떤 사람도 흉내 낼 엄두를 못 내며, 그 능력을 인정받아 모든 사람들에게 사랑받았습니다...라고 공책에 쓰여 있군요.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_LiberationCorpsmember</defName>
+    <title>마루 해방 단원</title>
+    <titleShort>마루 해방 단원</titleShort>
+    <baseDescription>[PAWN_nameDef]은 해적들에게 잡혀 노예가 된 마루들을 해방하는 마루 해방단의 단원입니다.\n비록 아직 눈에 띄는 실적은 없지만, 자부심과 열정만은 다른 마루들에게 결코 뒤처지지 않습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_mascot</defName>
+    <title>마루 마스코트</title>
+    <titleShort>마루 마스코트</titleShort>
+    <baseDescription>[PAWN_nameDef]은 상단의 마스코트입니다.\n잘 차려입은 [PAWN_nameDef]의 사진이 들어간 브로마이드 제품이나 홈페이지들이 인터넷에 널려있고, [PAWN_nameDef]은 나름 직업에 만족하고 있습니다.\n단지, 개중에는 잘 차려입지 못한 사진들이 있다는 게 조금 스트레스일 뿐이죠.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+	  <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_Captain</defName>
+    <title>마루 선장</title>
+    <titleShort>마루 선장</titleShort>
+    <baseDescription>[PAWN_nameDef]은 해적단의 선장입니다.\n특유의 집요함으로 악명을 떨친 이 마루는, 끊임없이 변화하는 우주의 생태에 맞춰 더더욱 악랄해졌습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>5</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_gangmember</defName>
+    <title>마루 조직원</title>
+    <titleShort>마루 조직원</titleShort>
+    <baseDescription>[PAWN_nameDef]은 범죄 조직의 조직원 입니다.\n조직의 명을 받아 수많은 일들을 처리했고, 수많은 위기를 넘겨 개인 사업장까지 가지게 되었지만 인간의 피비린내는 도저히 익숙해지지 않았습니다.\n아니, 오히려 이젠 그 냄새를 맡을 때마다 좋지 않은 기억들이 눈앞에 아른거립니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+<!--   <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_SpaceAntHive</defName>
+    <title>개미굴 마루</title>
+    <titleShort>개미굴 마루</titleShort>
+    <baseDescription>[PAWN_nameDef]은 우주 전쟁 개미들의 곁에서 생활했습니다.\n어째서 우주 전쟁 개미들이 [PAWN_nameDef]를 살려두었는지는 알 수 없지만, 우주 전쟁 개미들과 수많은 행성을 오가며 불바다를 뛰어놀았습니다.\n 우주 전쟁개미들은 [PAWN_nameDef]을 '오엨이'라고 불렀습니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef> -->
+  
+  
+</Defs>

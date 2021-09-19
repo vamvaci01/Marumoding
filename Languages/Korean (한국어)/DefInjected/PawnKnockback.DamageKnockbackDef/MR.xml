@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MR_ChainDamageDef.label>knockback damage</MR_ChainDamageDef.label>
+  <MR_ChainDamageDef.deathMessage>{0} has been shot to death by an harpoon.</MR_ChainDamageDef.deathMessage>
+</LanguageData>

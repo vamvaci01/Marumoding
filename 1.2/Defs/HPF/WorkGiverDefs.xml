@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- HPF.HPFWorkGiverDef is inheritance of WorkGiverDef with some additional arguments -->
+	<HPF.HPFWorkGiverDef Name="HPFWorkGiverBase" Abstract="True">
+		<giverClass>HPF.WorkGiver_GatherPawnResources</giverClass>
+		<priorityInType>100</priorityInType>
+	</HPF.HPFWorkGiverDef>
+	
+	<HPF.HPFWorkGiverDef ParentName="HPFWorkGiverBase">
+		<defName>ExtractSarira_Work</defName>
+		<label>Sarira</label>
+		<harvestJobDef>ExtractSarira_Job</harvestJobDef>
+		<workType>Doctor</workType>
+		<verb>extraction</verb>
+		<gerund>extracting</gerund>
+		<priorityInType>80</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>	
+	</HPF.HPFWorkGiverDef>	
+</Defs>

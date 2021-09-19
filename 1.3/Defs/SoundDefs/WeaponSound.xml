@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <!--복합궁 조준-->
+
+  <SoundDef>
+    <defName>AimingmarubowSE_O</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>A1</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>22~22</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+   <!--기계궁 조준-->
+
+  <SoundDef>
+    <defName>AimingmarubowSE_M</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>A2</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>22~22</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--펄스궁 조준-->
+
+  <SoundDef>
+    <defName>AimingmarubowSE_P</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>A3</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>22~22</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--복합궁 사격-->
+  
+  <SoundDef>
+    <defName>ShotmarubowSE_O</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>Shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>B1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--폭발궁 사격-->
+
+  <SoundDef>
+    <defName>ShotmarubowSE_E</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>Shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>B2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--추진궁 사격-->
+
+  <SoundDef>
+    <defName>ShotmarubowSE_PR</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>Shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>B3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--펄스궁 사격-->
+
+  <SoundDef>
+    <defName>ShotmarubowSE_PU</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <name>Shot</name>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>B4</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--복합궁 피격-->
+
+  <SoundDef>
+    <defName>MarubowSE_O</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--질량궁 피격-->
+
+  <ImpactSoundTypeDef>
+    <defName>MR_MarubowSE_W</defName>
+    <soundDef>MarubowSE_W</soundDef>
+  </ImpactSoundTypeDef>
+
+  <SoundDef>
+    <defName>MarubowSE_W</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--폭발궁 피격-->
+
+  <SoundDef>
+    <defName>MarubowSE_E</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C3</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--추진궁 피격-->
+
+  <SoundDef>
+    <defName>MarubowSE_P</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C4</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--펄스궁 피격-->
+
+  <SoundDef>
+    <defName>MarubowSE_Pulse</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C5</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <ImpactSoundTypeDef>
+    <defName>MR_PulseT</defName>
+    <soundDef>MarubowSE_PulseT</soundDef>
+  </ImpactSoundTypeDef>
+  
+  <!--펄스궁 자탄 피격-->
+
+  <SoundDef>
+    <defName>MarubowSE_PulseT</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>C6</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~82</volumeRange>
+        <pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--푸주칼 전기톱-->
+
+  <SoundDef>
+    <defName>maruSE_Chainsaw</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>D1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--푸주칼 결정화-->
+
+
+  <SoundDef>
+    <defName>maruSE_Crystallization</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>D2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--손도끼 사격-->
+
+  <SoundDef>
+    <defName>Shotmaruaxe_O</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>E1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--손도끼 사격2-->
+
+  <SoundDef>
+    <defName>Shotmaruaxe_T</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>E2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>18</min>
+          <max>18</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <ImpactSoundTypeDef>
+    <defName>MR_RopeSound</defName>
+    <soundDef>MaruRopeSound</soundDef>
+  </ImpactSoundTypeDef>
+
+  <SoundDef>
+    <defName>MaruRopeSound</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>R1</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>24</min>        
+          <max>24</max>
+        </volumeRange>
+		<pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!--
+  <SoundDef>
+    <defName>ChainSoundE</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>gCE</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>24</min>        
+          <max>24</max>
+        </volumeRange>
+		<pitchRange>1.6516304~1.954348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>-->
+
+</Defs>

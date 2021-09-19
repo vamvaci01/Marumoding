@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>Maru_flameworship</defName>
+    <commonality>0.001</commonality>
+    <degreeDatas>
+      <li>
+        <label>Flame Worship</label>
+        <description>{PAWN_nameDef}은 마루입니다. 온기를 느끼며 자신이 살아있음을 되새기고, 정신을 가다듬습니다.</description>
+        <allowedMeditationFocusTypes><li>Flame</li></allowedMeditationFocusTypes>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+    
+  <!--<TraitDef>
+    <defName>QuickSleeper</defName>
+    <degreeDatas>
+      <li>
+        <label>quick sleeper</label>
+        <description>{PAWN_nameDef} doesn't need as much sleep as the average person. Whether {PAWN_pronoun}'s sleeping on a bed or on the ground, {PAWN_pronoun} will be fully rested in about two thirds the usual time.</description>
+        <statOffsets>
+          <RestRateMultiplier>0.50</RestRateMultiplier>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>-->
+
+</Defs>

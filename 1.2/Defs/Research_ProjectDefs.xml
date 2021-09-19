@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>MaruStart</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchTabDef>
+		<defName>Maru_technology</defName>
+		<label>Maru technology</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>MaruRA1</defName>
+		<label>기초 해석 연구</label>
+		<description>사리에 대한 기초적인 이해와 그것을 응용하는 법을 연구합니다.</description>
+		<tab>Maru_technology</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+		</prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MaruRA2</defName>
+		<label>특수단조</label>
+		<description>급조된 설비로 상위의 기술을 흉내 내는 특이한 형태의 단조방식입니다.</description>
+		<tab>Maru_technology</tab>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      <li>Smithing</li>
+		</prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRA3</defName>
+    <label>극북의류</label>
+    <description>극지에서의 사냥과 생존을 위해 발달한 다양한 의류에 대한 연구입니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+    <requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+    </requiredResearchFacilities>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MaruRB1</defName>
+		<label>기초 해석기 연구</label>
+		<description>사리를 해석하기 위한 장치를 연구합니다.</description>
+		<tab>Maru_technology</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MaruRA1</li>
+      <li>MaruRA2</li>
+      <li>MaruRA3</li>
+		</prerequisites>
+		<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+		</requiredResearchFacilities>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRB2</defName>
+    <label>반중력 해석</label>
+    <description>반중력 기술의 발현방법을 해석하고 활용법을 연구합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_LenticularAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+   <ResearchProjectDef>
+    <defName>MaruRB3</defName>
+    <label>섬유공학 해석</label>
+    <description>선조의 섬유공학에 대한 정보를 해석하고 재현방법을 연구합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_LenticularAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRB4</defName>
+    <label>숨결 해석</label>
+    <description>지표 내부의 활성화 성분이 담겨있는 가스, 숨결에 대한 정보를 해석합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>50</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MaruRB3</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_LenticularAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+
+  <ResearchProjectDef>
+    <defName>MaruRC1</defName>
+    <label>고급 해석기</label>
+    <description>지금까지 해석한 정보들의 연속성과 특이점에 대한 분석 및 조율을 끝마쳤습니다.\n이 정보를 응용하여 다음 단계의 해석기를 만들기 위한 연구를 진행합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>1500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MaruRB2</li>
+      <li>MaruRB3</li>
+      <li>MaruRB4</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_LenticularAnalyzer</li>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRC2</defName>
+    <label>결정 공명 해석</label>
+    <description>스스로 공명하며 증식하는 결정에 대한 정보를 해석하고 응용법을 연구합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_BiometricAnalyzer</li>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRC3</defName>
+    <label>가속장치 해석</label>
+    <description>선조들의 선박에 주로 쓰이던 가속장치에 대한 정보를 해석하고 재현법을 연구합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_BiometricAnalyzer</li>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRC4</defName>
+    <label>반중력 심화 해석</label>
+    <description>반중력 기술에 대해 새겨진 더 많은 정보들을 찾아내고 해석합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_BiometricAnalyzer</li>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MaruRC5</defName>
+    <label>방향 간섭 해석</label>
+    <description>선조들의 정보 송수신에 주로 쓰이던 방향 간섭 기술에 대한 정보를 해석하고 응용법을 연구합니다.</description>
+    <tab>Maru_technology</tab>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MR_BiometricAnalyzer</li>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+
+
+</Defs>

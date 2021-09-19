@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Maru.label>Maru</Maru.label>
+  <Maru.corePart.parts.4.customLabel>tail</Maru.corePart.parts.4.customLabel>
+  <Maru.corePart.parts.7.customLabel>left lung</Maru.corePart.parts.7.customLabel>
+  <Maru.corePart.parts.8.customLabel>right lung</Maru.corePart.parts.8.customLabel>
+  <Maru.corePart.parts.9.customLabel>left kidney</Maru.corePart.parts.9.customLabel>
+  <Maru.corePart.parts.10.customLabel>right kidney</Maru.corePart.parts.10.customLabel>
+  <Maru.corePart.parts.12.parts.0.parts.1.customLabel>left eye</Maru.corePart.parts.12.parts.0.parts.1.customLabel>
+  <Maru.corePart.parts.12.parts.0.parts.2.customLabel>right eye</Maru.corePart.parts.12.parts.0.parts.2.customLabel>
+  <Maru.corePart.parts.12.parts.0.parts.3.customLabel>left ear</Maru.corePart.parts.12.parts.0.parts.3.customLabel>
+  <Maru.corePart.parts.12.parts.0.parts.4.customLabel>right ear</Maru.corePart.parts.12.parts.0.parts.4.customLabel>
+  <Maru.corePart.parts.13.customLabel>left shoulder</Maru.corePart.parts.13.customLabel>
+  <Maru.corePart.parts.13.parts.0.customLabel>left clavicle</Maru.corePart.parts.13.parts.0.customLabel>
+  <Maru.corePart.parts.13.parts.1.customLabel>left arm</Maru.corePart.parts.13.parts.1.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.0.customLabel>left humerus</Maru.corePart.parts.13.parts.1.parts.0.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.1.customLabel>left radius</Maru.corePart.parts.13.parts.1.parts.1.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.customLabel>left hand</Maru.corePart.parts.13.parts.1.parts.2.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>left pinky</Maru.corePart.parts.13.parts.1.parts.2.parts.0.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>left ring finger</Maru.corePart.parts.13.parts.1.parts.2.parts.1.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>left middle finger</Maru.corePart.parts.13.parts.1.parts.2.parts.2.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>left index finger</Maru.corePart.parts.13.parts.1.parts.2.parts.3.customLabel>
+  <Maru.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>left thumb</Maru.corePart.parts.13.parts.1.parts.2.parts.4.customLabel>
+  <Maru.corePart.parts.14.customLabel>right shoulder</Maru.corePart.parts.14.customLabel>
+  <Maru.corePart.parts.14.parts.0.customLabel>right clavicle</Maru.corePart.parts.14.parts.0.customLabel>
+  <Maru.corePart.parts.14.parts.1.customLabel>right arm</Maru.corePart.parts.14.parts.1.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.0.customLabel>right humerus</Maru.corePart.parts.14.parts.1.parts.0.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.1.customLabel>right radius</Maru.corePart.parts.14.parts.1.parts.1.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.customLabel>right hand</Maru.corePart.parts.14.parts.1.parts.2.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>right pinky</Maru.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>right ring finger</Maru.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>right middle finger</Maru.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>right index finger</Maru.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>
+  <Maru.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>right thumb</Maru.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>
+  <Maru.corePart.parts.16.customLabel>left leg</Maru.corePart.parts.16.customLabel>
+  <Maru.corePart.parts.16.parts.0.customLabel>left femur</Maru.corePart.parts.16.parts.0.customLabel>
+  <Maru.corePart.parts.16.parts.1.customLabel>left tibia</Maru.corePart.parts.16.parts.1.customLabel>
+  <Maru.corePart.parts.16.parts.2.customLabel>left foot</Maru.corePart.parts.16.parts.2.customLabel>
+  <Maru.corePart.parts.16.parts.2.parts.0.customLabel>left little toe</Maru.corePart.parts.16.parts.2.parts.0.customLabel>
+  <Maru.corePart.parts.16.parts.2.parts.1.customLabel>left fourth toe</Maru.corePart.parts.16.parts.2.parts.1.customLabel>
+  <Maru.corePart.parts.16.parts.2.parts.2.customLabel>left middle toe</Maru.corePart.parts.16.parts.2.parts.2.customLabel>
+  <Maru.corePart.parts.16.parts.2.parts.3.customLabel>left second toe</Maru.corePart.parts.16.parts.2.parts.3.customLabel>
+  <Maru.corePart.parts.16.parts.2.parts.4.customLabel>left big toe</Maru.corePart.parts.16.parts.2.parts.4.customLabel>
+  <Maru.corePart.parts.17.customLabel>right leg</Maru.corePart.parts.17.customLabel>
+  <Maru.corePart.parts.17.parts.0.customLabel>right femur</Maru.corePart.parts.17.parts.0.customLabel>
+  <Maru.corePart.parts.17.parts.1.customLabel>right tibia</Maru.corePart.parts.17.parts.1.customLabel>
+  <Maru.corePart.parts.17.parts.2.customLabel>right foot</Maru.corePart.parts.17.parts.2.customLabel>
+  <Maru.corePart.parts.17.parts.2.parts.0.customLabel>right little toe</Maru.corePart.parts.17.parts.2.parts.0.customLabel>
+  <Maru.corePart.parts.17.parts.2.parts.1.customLabel>right fourth toe</Maru.corePart.parts.17.parts.2.parts.1.customLabel>
+  <Maru.corePart.parts.17.parts.2.parts.2.customLabel>right middle toe</Maru.corePart.parts.17.parts.2.parts.2.customLabel>
+  <Maru.corePart.parts.17.parts.2.parts.3.customLabel>right second toe</Maru.corePart.parts.17.parts.2.parts.3.customLabel>
+  <Maru.corePart.parts.17.parts.2.parts.4.customLabel>right big toe</Maru.corePart.parts.17.parts.2.parts.4.customLabel>
+</LanguageData>

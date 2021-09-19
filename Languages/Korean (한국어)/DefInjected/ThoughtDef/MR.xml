@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Maru_OverPopulation.stages.0.label>쾌적함</Maru_OverPopulation.stages.0.label>
+  <Maru_OverPopulation.stages.0.description>생활하기 좋은 인원이야.</Maru_OverPopulation.stages.0.description>
+  <Maru_OverPopulation.stages.1.label>안전함</Maru_OverPopulation.stages.1.label>
+  <Maru_OverPopulation.stages.1.description>든든한 인원인걸.</Maru_OverPopulation.stages.1.description>
+  <Maru_OverPopulation.stages.2.label>혼잡함</Maru_OverPopulation.stages.2.label>
+  <Maru_OverPopulation.stages.2.description>수많은 냄새가 흘러들어오고 있어.</Maru_OverPopulation.stages.2.description>
+  <Maru_OverPopulation.stages.3.label>불안함</Maru_OverPopulation.stages.3.label>
+  <Maru_OverPopulation.stages.3.description>좋은 생각은 아닌 것 같아.</Maru_OverPopulation.stages.3.description>
+  <Maru_OverPopulation.stages.4.label>경계중</Maru_OverPopulation.stages.4.label>
+  <Maru_OverPopulation.stages.4.description>그 누가 이만한 인원을 전부 믿을 수 있을까.</Maru_OverPopulation.stages.4.description>
+</LanguageData>

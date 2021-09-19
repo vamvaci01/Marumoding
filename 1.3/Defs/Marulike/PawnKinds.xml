@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<PawnKindDef Name="MRBasePawnKind" Abstract="True">
+		<race>Maru</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>Maru_PlayerFaction</defaultFactionType>
+	</PawnKindDef>
+
+
+	<!-- 마루 플레이어 정착민 -->
+	<PawnKindDef ParentName="MRBasePawnKind">
+		<defName>Maru_Colonist</defName>
+		<label>Maru colonist</label>
+		<defaultFactionType>Maru_PlayerFaction</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>MRALL</li>
+					<li>MR_Child</li>
+					<li>MR_Adult</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>		
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<apparelTags>
+			<li>MR_Starting</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>550</min>
+			<max>900</max>
+		</apparelMoney>
+		<apparelRequired>
+		</apparelRequired>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+	</PawnKindDef>
+
+
+	<!-- 기본 -->
+
+	<PawnKindDef Name="marunpcBasePawnKind" Abstract="True">
+		<race>Maru</race>
+		<defaultFactionType>MRF_Hyperborea</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<maxGenerationAge>65</maxGenerationAge>
+	</PawnKindDef>
+
+
+
+  <!-- 요리사 -->
+
+  
+  
+  <!-- 방랑자 -->
+
+  
+  
+  <!-- 대상 -->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_Caravan</defName>
+    <label>Maru Caravan</label>
+    <combatPower>50</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Merchant</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1800</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- 일꾼 -->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_Engineer</defName>
+    <label>Maru Engineer</label>
+    <combatPower>40</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Engineer</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>400</min>
+      <max>1000</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>800</max>
+    </weaponMoney>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- 기술자 -->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_Work</defName>
+    <label>Maru Technician</label>
+    <combatPower>50</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Work</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1800</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- 의사 -->
+  
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_Doctor</defName>
+    <label>Maru Doctor</label>
+    <combatPower>40</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Doctor</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1800</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!--=============특수============-->
+
+  <!-- 사냥꾼 -->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_CHunter</defName>
+    <label>Maru Contract Hunter</label>
+    <combatPower>80</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>false</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_CHunter</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>800</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_WhalingHarpoonCH</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsChance>0.01</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+
+  <!-- 사냥꾼 -->
+
+	<PawnKindDef ParentName="marunpcBasePawnKind">
+		<defName>MRP_Hunter</defName>
+		<label>Maru Hunter</label>
+		<combatPower>80</combatPower>
+		<isFighter>true</isFighter>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>MRALL</li>
+					<li>MR_Child</li>
+					<li>MR_Adult</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>				
+		<apparelTags>
+      <li>MR_Hunter</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>500</min>
+			<max>1800</max>
+		</apparelMoney>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>300</min>
+			<max>2000</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+  <!-- 해석가 -->
+  
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_Deciphers</defName>
+    <label>Maru Decipher</label>
+    <combatPower>80</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Deciphers</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1800</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsChance>0.02</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- 산지기 -->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_MountainRanger</defName>
+    <label>Maru MountainRanger</label>
+    <combatPower>300</combatPower>
+    <isFighter>true</isFighter>
+    <forceNormalGearQuality>false</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <trader>true</trader>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_MountainRanger</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>3500</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>2500</max>
+    </weaponMoney>
+    <techHediffsChance>0.02</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!--=============공격군============-->
+
+  <!--송곳니-->
+
+  <PawnKindDef ParentName="marunpcBasePawnKind">
+    <defName>MRP_fangs</defName>
+    <label>Maru fangs</label>
+    <combatPower>120</combatPower>
+    <isFighter>true</isFighter>
+	<factionLeader>true</factionLeader>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MRALL</li>
+		  <li>MR_Child</li>
+		  <li>MR_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>MR_Hunter</li>
+      <li>MR_MountainRanger</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>3500</max>
+    </apparelMoney>
+    <apparelRequired>
+    </apparelRequired>
+    <weaponTags>
+    <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>300</min>
+      <max>2500</max>
+    </weaponMoney>
+    <techHediffsChance>0.02</techHediffsChance>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="Mr_PlayerFactionBase">
+    <settlementTexturePath>Icon/MR_Icon</settlementTexturePath>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  
+  <!-- 플레이어 -->
+  <FactionDef ParentName="Mr_PlayerFactionBase">
+    <defName>Maru_PlayerFaction</defName>
+    <label>Clan</label>
+    <description>당신의 정착지입니다.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Maru_Colonist</basicMemberKind>
+    <pawnSingular>Maru</pawnSingular>
+    <pawnsPlural>Snow Leopards</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategories>
+      <li>Offworld</li>
+    </backstoryCategories>
+    <factionIconPath>Icon/MR_Icon</factionIconPath>
+    <settlementTexturePath>Icon/MR_HomeIcon</settlementTexturePath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+		<li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+  
+  
+  <!-- 팩션 -->
+
+  <FactionDef ParentName="HumanFactionBase" Name="MaruFactionBase" Abstract="True">
+		<pawnSingular>Maru</pawnSingular>
+		<pawnsPlural>Snow Leopards</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<humanlikeFaction>true</humanlikeFaction>
+		<leaderTitle>Head</leaderTitle>
+		<factionIconPath>Icon/MR_Icon</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategories>
+      <li>Outlander</li>
+		</backstoryCategories>
+		<geneticVariance>0.7</geneticVariance>
+		<hairTags>
+      <li>Urban</li>
+		</hairTags>
+		<caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-60</min>
+			<max>50</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <!-- 송곳니 -->
+     <li>
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <MRP_fangs>20</MRP_fangs>
+        </options> 
+      </li>
+    <!-- 야전군 정규군 mix -->
+    <!--  <li>
+        <kindDef>Combat</kindDef>
+        <commonality>35</commonality>
+        <options>
+          <RB_SubOfficer>1</RB_SubOfficer>
+          <RB_FSapper>5</RB_FSapper>
+          <RB_FRifle>12</RB_FRifle>
+          <RB_FMachinegunner>5</RB_FMachinegunner>
+          <RB_FSniper>6</RB_FSniper>
+          <RB_RGunner>11</RB_RGunner>
+        </options>
+      </li> -->
+      <li>
+        <!-- 정규군only -->
+        <kindDef>Combat</kindDef>
+        <commonality>15</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <MRP_fangs>20</MRP_fangs>
+		  <MRP_MountainRanger>10</MRP_MountainRanger>
+        </options>
+      </li>
+      <li>
+        <!-- 방어군 -->
+           <kindDef>Settlement</kindDef>
+        <options>
+          <MRP_MountainRanger>1</MRP_MountainRanger>
+          <MRP_Deciphers>8</MRP_Deciphers>
+          <MRP_Hunter>20</MRP_Hunter>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <MRP_Hunter>20</MRP_Hunter>
+          <MRP_Doctor>20</MRP_Doctor>
+          <MRP_Caravan>5</MRP_Caravan>
+          <MRP_Work>20</MRP_Work>
+          <MRP_Engineer>20</MRP_Engineer>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <MRP_Caravan>20</MRP_Caravan>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+        </carriers>
+        <guards>
+          <MRP_Hunter>20</MRP_Hunter>
+          <MRP_Doctor>8</MRP_Doctor>
+        </guards> 
+      </li>
+      </pawnGroupMakers>
+		<settlementTexturePath>Icon/MR_Icon</settlementTexturePath>
+	</FactionDef>
+  
+  
+  <FactionDef ParentName="MaruFactionBase">
+    <defName>MRF_Hyperborea</defName>
+    <label>upper mountain</label>
+    <description>test.</description>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+    <startingGoodwill>-50~0</startingGoodwill>
+    <naturalColonyGoodwill>-50~0</naturalColonyGoodwill>
+	<goodwillDailyGain>0.20</goodwillDailyGain>
+    <goodwillDailyFall>0.20</goodwillDailyFall>
+  </FactionDef>
+  
+  
+  
+</Defs>

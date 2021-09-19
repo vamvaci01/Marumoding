@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffGiverSetDef>
+    <defName>MR_standard</defName>
+    <hediffGivers>
+
+      <li Class="HediffGiver_Birthday">
+        <hediff>MR_HediffA</hediff>
+        <countToAffect>1</countToAffect>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+      
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+ 
+  
+ 
+  
+ 
+</Defs>

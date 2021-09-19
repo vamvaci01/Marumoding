@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ThoughtDef>
+  <defName>Maru_OverPopulation</defName>
+  <workerClass>MaruThought.ThoughtWorker_OverPopulation_Maru</workerClass>
+  <stages>
+    <li>
+      <!--5명 이하-->
+      <label>쾌적함</label>
+      <description>생활하기 좋은 인원이야.</description>
+      <baseMoodEffect>3</baseMoodEffect>
+    </li>
+    <li>
+      <!--10명 이하-->
+      <label>안전함</label>
+      <description>든든한 인원인걸.</description>
+      <baseMoodEffect>1</baseMoodEffect>
+    </li>
+    <li>
+      <!--20명 이하-->
+      <label>혼잡함</label>
+      <description>수많은 냄새가 흘러들어오고 있어.</description>
+      <baseMoodEffect>-3</baseMoodEffect>
+    </li>
+    <li>
+      <!--30명 이하-->
+      <label>불안함</label>
+      <description>좋은 생각은 아닌 것 같아.</description>
+      <baseMoodEffect>-5</baseMoodEffect>
+    </li>
+    <li>
+      <!--30명 이상-->
+      <label>경계중</label>
+      <description>그 누가 이만한 인원을 전부 믿을 수 있을까.</description>
+      <baseMoodEffect>-8</baseMoodEffect>
+    </li>
+  </stages>
+</ThoughtDef>
+</Defs>

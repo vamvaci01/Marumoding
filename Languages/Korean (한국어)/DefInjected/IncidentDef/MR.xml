@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <WandererJoin_CHunter_Scenario.label>사냥꾼 합류</WandererJoin_CHunter_Scenario.label>
+  <WandererJoin_CHunter_Scenario.letterLabel>사냥꾼 합류: {PAWN_nameDef}</WandererJoin_CHunter_Scenario.letterLabel>
+  <WandererJoin_CHunter_Scenario.letterText>사냥꾼이 도착했습니다.</WandererJoin_CHunter_Scenario.letterText>
+</LanguageData>
