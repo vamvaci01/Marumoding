@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MaruTerrainSkip.ObstaclePathInteractDef>
+    <defName>ObstacleSkip_Maru</defName>
+	<raceDefs>
+		<li>Maru</li> 
+	</raceDefs>
+	<ignoreTerrainCost>true</ignoreTerrainCost>
+	<ignoreObstacleCost>true</ignoreObstacleCost>
+  </MaruTerrainSkip.ObstaclePathInteractDef>
+</Defs>

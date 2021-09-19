@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MR_Sarira</defName>
+		<label>사리</label>
+		<description>마루들의 몸에서 자연 생성되는, 선조의 기술이 담긴 구슬입니다.\n\n구슬에 새겨진 기술은 개체에 따라 다르며, 읽고자 하는 기술의 종류에 따라 제각각 특수한 해석 방법을 지닙니다.\n사리가 지니는 이 까다로운 해석방법과 정보전달방식은 이를 연구하고자하는 해석가 마루들이 자연스레 모이는 이유가 되었습니다.</description>
+		<graphicData>
+			<texPath>Things/Resource/MaruSarira</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<stackLimit>20</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<tradeTags inherit="false">
+			<li>ExoticMisc</li>
+		</tradeTags>		
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<color>(53,99,194)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		</stuffProps>		
+	</ThingDef>	
+</Defs>

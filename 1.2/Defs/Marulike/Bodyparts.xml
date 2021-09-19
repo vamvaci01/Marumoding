@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<BodyPartDef>
+   	 <defName>MR_BigTail</defName>
+   	 <label>tail</label>
+   	 <hitPoints>30</hitPoints>
+   	 <frostbiteVulnerability>0</frostbiteVulnerability>
+   	 <skinCovered>true</skinCovered>
+   	 <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+	</BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>MR_SecondaryOpticNerve</defName>
+    <label>SecondaryOpticNerve</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>true</socketed>
+    <beautyRelated>false</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+</Defs>

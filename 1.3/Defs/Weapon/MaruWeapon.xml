@@ -1,0 +1,2137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<ThingDef Name="BaseMeleeWeapon_Sharp" ParentName="BaseMeleeWeapon" Abstract="True">
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+          <li>WoodLog</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="BaseMeleeWeapon_Sharp_Quality" Abstract="True" ParentName="BaseMeleeWeapon_Sharp">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>-->
+
+  <ThingDef Name="MaruBaseWeapon" ParentName="BaseWeapon" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_Hyperborea</li>
+    </weaponTags>
+  </ThingDef>
+  
+  <ThingDef Name="MaruBaseMeleeWeapon_O" ParentName="MaruBaseWeapon" Abstract="True">
+  <weaponTags>
+      <li>MaruWeapon_Cleaver</li>
+  </weaponTags>
+    <techLevel>Industrial</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="MaruBaseMeleeWeapon_T" ParentName="MaruBaseMeleeWeapon_O" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>MaruWeapon_CleaverT</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--푸주칼-->
+  
+  <ThingDef ParentName="MaruBaseMeleeWeapon_O">
+    <defName>MR_C_O</defName>
+    <label>Cleaver</label>
+    <description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_C_O</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags> 
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+     <Steel>50</Steel>
+      <MR_Sarira>2</MR_Sarira>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+			<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+		</equippedStatOffsets>	
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRA2</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="MaruBaseMeleeWeapon_O">
+    <defName>MR_C_AO</defName>
+    <label>Cleaver : Reinforcement</label>
+    <description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n부속장치를 추가하고 날을 덧댔습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_C_AO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+    <costList>
+      <MR_C_O>1</MR_C_O>
+      <Plasteel>10</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+			<ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags> 
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+			<ButcheryFleshSpeed>0.2</ButcheryFleshSpeed>
+		</equippedStatOffsets>	
+    <recipeMaker>
+      <researchPrerequisite Inherit="False">Machining</researchPrerequisite>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+      <ThingDef ParentName="MaruBaseMeleeWeapon_T">
+    <defName>MR_C_AT</defName>
+    <label>Cleaver : Crystallization</label>
+    <description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n사리로부터 해석해낸 기술을 이용해 더욱 치명적인 상처를 남길 수 있도록 개조되었습니다.</description>
+    <meleeHitSound>maruSE_Crystallization</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/MR_C_AT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+        <costList>
+      <MR_C_AO>1</MR_C_AO>
+      <Plasteel>20</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+        <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags> 
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      <extraMeleeDamages>
+          <li>
+            <def>MR_Crystallization</def>
+            <amount>4</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRC2</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <!--뎀뎊-->
+   <DamageDef Name="CutBase">
+    <defName>MR_Crystallization</defName>
+    <label>결정화</label>
+    <workerClass>DamageWorker_Cut</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been cut to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSkin>Cut</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0, 0</li>
+        <li>0.6, 1</li>
+        <li>0.9, 2</li>
+        <li>1, 3</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+   <additionalHediffs>
+				<li>
+					<hediff>MRH_Crystal</hediff>
+					<severityPerDamageDealt>1</severityPerDamageDealt>
+					<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+				</li>
+			</additionalHediffs>
+  </DamageDef>
+  
+  <HediffDef>
+		<defName>MRH_Crystal</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>결정화</label>
+		<labelNoun>결정화</labelNoun>
+		<description>상처 주변이 경화되어 부서집니다.</description>
+		<defaultLabelColor>(0.7,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-20</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<IncomingDamageFactor>1.25</IncomingDamageFactor>
+					<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+    <!--ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ-->
+  
+        <ThingDef ParentName="MaruBaseMeleeWeapon_O">
+    <defName>MR_C_BO</defName>
+    <label>Cleaver : Cutting</label>
+    <description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n날 부분에 전기톱을 달아 절삭력을 증가시켰습니다.</description>
+    <meleeHitSound>maruSE_Chainsaw</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/MR_C_BO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+          <costList>
+      <MR_C_O>1</MR_C_O>
+      <Steel>20</Steel>
+      <MR_Sarira>4</MR_Sarira>
+			<ComponentIndustrial>3</ComponentIndustrial>
+          </costList>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags> 
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+       <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>3</cooldownTime>
+      <armorPenetration>0.3</armorPenetration>
+      </li>
+    </tools>
+          <equippedStatOffsets>
+			<ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
+		</equippedStatOffsets>	
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+        <ThingDef ParentName="MaruBaseMeleeWeapon_T">
+    <defName>MR_C_BT</defName>
+    <label>Cleaver : Slaughter</label>
+    <description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n소형화시킨 가속장치를 이용해 날의 회전력을 증대시켰습니다.</description>
+    <meleeHitSound>maruSE_Chainsaw</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/MR_C_BT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Medieval</techLevel>
+          <costList>
+             <MR_C_BO>1</MR_C_BO>
+      <Plasteel>30</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+        <ComponentSpacer>2</ComponentSpacer>
+          </costList>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags> 
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+       <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>34</power>
+        <cooldownTime>3</cooldownTime>
+      <armorPenetration>0.5</armorPenetration>
+      </li>
+    </tools>
+          <equippedStatOffsets>
+			<ButcheryFleshSpeed>0.4</ButcheryFleshSpeed>
+		</equippedStatOffsets>	
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRC3</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--<ThingDef Name="BaseWeaponNeolithic" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_MakeBow</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>-->
+
+  <ThingDef Name="MaruBaseaxe_O" ParentName="MaruBaseWeapon" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_Handaxe</li>
+    </weaponTags>
+    <techLevel>Industrial</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="MaruBaseaxe_T" ParentName="MaruBaseaxe_O" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_HandaxeT</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <!--손도끼-->
+  
+<ThingDef ParentName="MaruBaseaxe_O">
+    <defName>MR_HA_O</defName>
+    <label>Hand Axe</label>
+    <description>다양한 곳에 쓰이는 손도끼입니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_O</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <Steel>70</Steel>
+      <MR_Sarira>1</MR_Sarira>
+    </costList>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRA2</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_HandaxeO_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>8</range>
+        <soundCast>Shotmaruaxe_O</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+     <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      <armorPenetration>0.1</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedStatOffsets>
+      <PlantHarvestYield>0.2</PlantHarvestYield>
+		</equippedStatOffsets>	
+<equippedAngleOffset>-45</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_HandaxeO_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_O_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="MaruBaseaxe_O">
+    <defName>MR_HA_AO</defName>
+    <label>Hand Axe : Delay</label>
+    <description>다양한 곳에 쓰이는 손도끼입니다.\n파괴력은 유지시킨 채로 더욱 더 먼 거리를 공격할 수 있도록 개조되었습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_AO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+   <costList>
+      <MR_HA_O>1</MR_HA_O>
+      <Plasteel>15</Plasteel>
+      <MR_Sarira>3</MR_Sarira>
+			<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.81</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.62</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRB2</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_HandaxeAO_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>12</range>
+        <soundCast>Shotmaruaxe_O</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+       <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.2</PlantHarvestYield>
+		</equippedStatOffsets>	
+  <equippedAngleOffset>-45</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_HandaxeAO_Thrown</defName>
+    <label>Hand Axe AO</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_AO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+    
+    <ThingDef ParentName="MaruBaseaxe_T">
+    <defName>MR_HA_AT</defName>
+    <label>Hand Axe : throwing</label>
+    <description>다양한 곳에 쓰이는 손도끼입니다.\n두가지 간섭장치를 병행해서 사용해 파괴력과 사정거리를 끌어올렸습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_AT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <MR_HA_AO>1</MR_HA_AO>
+      <Plasteel>30</Plasteel>
+      <MR_Sarira>3</MR_Sarira>
+        <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.81</AccuracyShort>
+      <AccuracyMedium>0.76</AccuracyMedium>
+      <AccuracyLong>0.72</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRC5</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_HandaxeAT_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>19</range>
+        <soundCast>Shotmaruaxe_T</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      <armorPenetration>0.2</armorPenetration>
+      </li>
+    </tools>
+      <equippedStatOffsets>
+      <PlantHarvestYield>0.2</PlantHarvestYield>
+		</equippedStatOffsets>	
+    <equippedAngleOffset>-45</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_HandaxeAT_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_AT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="MaruBaseaxe_O">
+    <defName>MR_HA_BO</defName>
+    <label>Hand Axe : Tracking</label>
+    <description>다양한 곳에 쓰이는 손도끼입니다.\n몇가지 부속장치를 추가해 더욱 강한 파괴력을 지닙니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_BO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <MR_HA_O>1</MR_HA_O>
+      <Plasteel>15</Plasteel>
+      <MR_Sarira>3</MR_Sarira>
+			<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_HandaxeBO_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>5</range>
+        <soundCast>Shotmaruaxe_O</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <PlantHarvestYield>0.2</PlantHarvestYield>
+		</equippedStatOffsets>	
+  <equippedAngleOffset>-45</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_HandaxeBO_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_BO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+    
+    <ThingDef ParentName="MaruBaseaxe_T">
+    <defName>MR_HA_BT</defName>
+    <label>Hand Axe : Hunting</label>
+    <description>다양한 곳에 쓰이는 손도끼입니다.\n거대한 맹수를 사냥하기 위해 파괴력을 극한까지 끌어올렸습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_BT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+       <MR_HA_BO>1</MR_HA_BO>
+      <Plasteel>30</Plasteel>
+      <MR_Sarira>3</MR_Sarira>
+        <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>MaruRC3</researchPrerequisite>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_HandaxeBT_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>5</range>
+        <soundCast>Shotmaruaxe_T</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>48</power>
+        <cooldownTime>4</cooldownTime>
+      </li>
+    </tools>
+      <equippedStatOffsets>
+      <PlantHarvestYield>0.2</PlantHarvestYield>
+		</equippedStatOffsets>	
+    <equippedAngleOffset>-45</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_HandaxeBT_Thrown</defName>
+    <label>HandaxeBT_Thrown</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_HA_BT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+
+  <!--복합궁base-->
+  <ThingDef Name="MaruBasebow_O" ParentName="MaruBaseWeapon" Abstract="True">
+    <equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+    <weaponTags>
+      <li>MaruWeapon_Compoundbow</li>
+    </weaponTags>
+    <techLevel>Industrial</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="MaruBasebow_T" ParentName="MaruBaseaxe_O" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_CompoundbowT</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <!--복합궁-->
+  
+   <ThingDef ParentName="MaruBasebow_O">
+    <defName>MR_CPB_O</defName>
+    <label>Compound Bow</label>
+    <description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_O</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+			<ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_GreatO</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>29.9</range>
+        <soundCast>ShotmarubowSE_O</soundCast>
+        <soundAiming>AimingmarubowSE_O</soundAiming>
+      <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+     <equippedAngleOffset>-55</equippedAngleOffset>
+    <recipeMaker>
+     <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>Machining</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_GreatO</defName>
+    <label>greatbow arrowO</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_O_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <damageAmountBase>17</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>49</speed>
+      <flyOverhead>True</flyOverhead>
+    </projectile>
+  </ThingDef>
+    
+  
+    
+   <ThingDef ParentName="MaruBasebow_O">
+    <defName>MR_CPB_AO</defName>
+    <label>Compound Bow : High Mass</label>
+    <description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n특수한 처리를 한 창과 같은 화살을 사용합니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_AO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <MR_CPB_O>1</MR_CPB_O>
+      <Plasteel>20</Plasteel>
+      <Gold>6</Gold>
+      <MR_Sarira>3</MR_Sarira>
+			<ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_GreatAO</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>35</range>
+        <soundCast>ShotmarubowSE_O</soundCast>
+        <soundAiming>AimingmarubowSE_O</soundAiming>
+      <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+     <equippedAngleOffset>-55</equippedAngleOffset>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+ <researchPrerequisite>MaruRB2</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_GreatAO</defName>
+    <label>greatbow arrowB</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_AO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+     <drawSize>1.1</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>30</speed>
+      <flyOverhead>True</flyOverhead>
+    </projectile>
+  </ThingDef>
+  
+    
+  <ThingDef ParentName="MaruBasebow_T">
+    <defName>MR_CPB_AT</defName>
+    <label>Compound Bow : Pulse</label>
+    <description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n펄스를 이용하는 특수한 화살을 사용하여 넓은 범위에 충격을 흩뿌립니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_AT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+      <MR_CPB_AO>1</MR_CPB_AO>
+      <Plasteel>20</Plasteel>
+      <MR_Sarira>12</MR_Sarira>
+        <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Arrow_Pulse</defaultProjectile>
+				<warmupTime>4.0</warmupTime>
+				<minRange>4</minRange>
+				<range>40</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>80</ticksBetweenBurstShots>
+				<soundCast>ShotmarubowSE_PU</soundCast>
+				<soundAiming>AimingmarubowSE_P</soundAiming>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+      <requireLineOfSight>false</requireLineOfSight>  
+			</li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-55</equippedAngleOffset>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRC2</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+    
+    <ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Arrow_Pulse</defName>
+		<label>Pulse arrow</label>
+		<graphicData>
+			<texPath>Things/Weapons/MR_CPB_AT_shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.1</drawSize>
+		</graphicData>
+		<thingClass>TorgueMaru.Projectile_Torgue_Rocket</thingClass>
+		<projectile Class="TorgueMaru.TorgueProjectileProps">
+			<speed>30</speed>
+      <flyOverhead>True</flyOverhead>
+			<damageDef>MR_Pulse_a</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<explosionRadius>1</explosionRadius>
+			<subProjectile>MR_Pulse_sub</subProjectile>
+			<clusterCount>8</clusterCount>
+			<clusterRadius>5</clusterRadius>
+		</projectile>
+	</ThingDef>
+    
+  <DamageDef Name="MR_Pulse_a">
+		<defName>MR_Pulse_a</defName>
+		<label>Pulse arrow</label>
+		<workerClass>TorgueMaru.Torgue_DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an Pulse.</deathMessage>
+		<hediff>Bruise</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>MR_PulseT</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<minDamageToFragment>1</minDamageToFragment>
+		<defaultDamage>8</defaultDamage>
+		<defaultArmorPenetration>0.5</defaultArmorPenetration>
+		<buildingDamageFactor>1</buildingDamageFactor>
+		<plantDamageFactor>5</plantDamageFactor>
+		<!-- <explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly> -->
+		<explosionCellMote>Mote_Pulse</explosionCellMote>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.8, 0.8, 1)</explosionColorEdge>
+		<soundExplosion>MarubowSE_Pulse</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultStoppingPower>2.0</defaultStoppingPower>
+	</DamageDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>MR_Pulse_sub</defName>
+		<label>Pulsesubarrow</label>
+		<graphicData>
+			<texPath>Things/Weapons/MR_CPB_AT_shotT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>30</speed>
+			<damageDef>MR_Pulse_a</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<explosionRadius>0.9</explosionRadius>
+			<explosionDelay>1</explosionDelay>
+			<arcHeightFactor>20</arcHeightFactor>
+			<shadowSize>0</shadowSize>
+			<flyOverhead>false</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		</projectile>
+	</ThingDef>
+      
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_GreatAT</defName>
+    <label>greatbow arrowB</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_AT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.1</drawSize>
+    			<shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Arrow</damageDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <damageAmountBase>17</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>49</speed>
+      <flyOverhead>True</flyOverhead>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef Name="MaruMotebase" Abstract="True">
+		<thingClass>MoteThrown</thingClass>
+		<label>Mote</label>
+		<category>Mote</category>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+		<isSaveable>false</isSaveable>
+		<rotatable>false</rotatable>
+	</ThingDef>
+    
+  <ThingDef ParentName="MaruMotebase">
+		<defName>Mote_Pulse</defName>
+		<graphicData>
+			<texPath>Things/Weapons/marupulse</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.1</solidTime>
+			<fadeInTime>0.05</fadeInTime>
+			<fadeOutTime>0.15</fadeOutTime>
+		</mote>
+	</ThingDef>
+
+
+  
+  <ThingDef ParentName="MaruBasebow_O">
+    <defName>MR_CPB_BO</defName>
+    <label>Compound Bow : Explosive</label>
+    <description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n표적에 닿을 시 폭발하는 특수한 화살을 이용합니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_BO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+       <MR_CPB_O>1</MR_CPB_O>
+      <Plasteel>20</Plasteel>
+      <Gold>6</Gold>
+      <MR_Sarira>3</MR_Sarira>
+			<ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_GreatBO</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <range>35</range>
+        <soundCast>ShotmarubowSE_E</soundCast>
+        <soundAiming>AimingmarubowSE_M</soundAiming>
+        <forcedMissRadius>0.01</forcedMissRadius>
+    <requireLineOfSight>false</requireLineOfSight>  
+    </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-55</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite Inherit="False">IEDs</researchPrerequisite>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_GreatBO</defName>
+    <label>greatbow arrowA</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_BO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>30</speed>
+      <explosionRadius>1</explosionRadius>
+    <flyOverhead>True</flyOverhead>
+    </projectile>
+  </ThingDef>
+  
+    
+  <ThingDef ParentName="MaruBasebow_T">
+    <defName>MR_CPB_BT</defName>
+    <label>Compound Bow : Propulsion</label>
+    <description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n화살에 추진기를 달아 보다 멀리, 보다 빠르게 공격을 가능케 합니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_BT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+       <MR_CPB_BO>1</MR_CPB_BO>
+      <Plasteel>20</Plasteel>
+      <MR_Sarira>12</MR_Sarira>
+        <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Arrow_GreatBT</defaultProjectile>
+        <warmupTime>3.0</warmupTime>
+        <forcedMissRadius>0.01</forcedMissRadius>
+        <range>46</range>
+         <soundCast>ShotmarubowSE_PR</soundCast>
+        <soundAiming>AimingmarubowSE_M</soundAiming>
+      <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+      <equippedAngleOffset>-55</equippedAngleOffset>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRC3</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_GreatBT</defName>
+    <label>greatbow arrowBT</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_CPB_BT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.3</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>49</speed>
+      <explosionRadius>1</explosionRadius>
+    <flyOverhead>True</flyOverhead>
+    </projectile>
+  </ThingDef>
+  
+  <!--작살base-->
+
+  <ThingDef Name="MaruBaseHarpoon_O" ParentName="MaruBaseWeapon" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_WhalingHarpoon</li>
+    </weaponTags>
+    <techLevel>Industrial</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="MaruBaseHarpoon_T" ParentName="MaruBaseHarpoon_O" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_WhalingHarpoonT</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="MaruBaseHarpoon_CH" ParentName="MaruBaseHarpoon_O" Abstract="True">
+    <weaponTags>
+      <li>MaruWeapon_WhalingHarpoonCH</li>
+    </weaponTags>
+  </ThingDef>
+
+
+  <!--작살-->
+  
+    <ThingDef ParentName="MaruBaseHarpoon_CH">
+    <defName>MR_WH_O</defName>
+    <label>Whaling Harpoon</label>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_O</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <WoodLog>40</WoodLog>
+      <Steel>40</Steel>
+      <MR_Sarira>2</MR_Sarira>
+    </costList>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <researchPrerequisite>MaruRA2</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_WhalingHarpoon_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>17</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedAngleOffset>40</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_WhalingHarpoon_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_O_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!--작살개조-->
+  
+<ThingDef ParentName="MaruBaseHarpoon_O">
+    <defName>MR_WH_AO</defName>
+    <label>Whaling Harpoon : Improvement</label>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n 사냥꾼들의 수많은 경험에 기반하여 개량되었습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <MR_WH_O>1</MR_WH_O>
+      <Plasteel>15</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+			<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.81</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.62</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_WhalingHarpoonAO_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>20</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedAngleOffset>40</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_WhalingHarpoonAO_Thrown</defName>
+    <label>Whaling Harpoon : Improvement</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>27</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+<ThingDef ParentName="MaruBaseHarpoon_T">
+    <defName>MR_WH_AT</defName>
+    <label>Whaling Harpoon : Rope</label>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n 로프를 사용해 목표물을 끌어당길 수 있는 간섭장치가 내장 되어있습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+      <MR_WH_AO>1</MR_WH_AO>
+      <Plasteel>20</Plasteel>
+      <MR_Sarira>8</MR_Sarira>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRC5</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MaruBulletExecutionerChain</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>24</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedAngleOffset>40</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_WhalingHarpoonAT_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+<!--2번 개조-->
+  <ThingDef ParentName="MaruBaseHarpoon_O">
+    <defName>MR_WH_BO</defName>
+    <label>Whaling Harpoon : Anti-Gravity</label>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n선조의 기술을 활용해 비거리를 비약적으로 늘렸습니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_BO</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+       <MR_WH_O>1</MR_WH_O>
+      <Plasteel>15</Plasteel>
+      <MR_Sarira>4</MR_Sarira>
+			<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRB2</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_WhalingHarpoonBO_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>25</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedAngleOffset>40</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_WhalingHarpoonBO_Thrown</defName>
+    <label>Whaling Harpoon AO</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AO_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+  
+    
+<ThingDef ParentName="MaruBaseHarpoon_T">
+    <defName>MR_WH_BT</defName>
+    <label>Whaling Harpoon : EMP</label>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n외장된 장치를 이용해 공격에 맞은 기계들을 무력화 시킵니다.</description>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_BT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costList>
+     <MR_WH_BO>1</MR_WH_BO>
+      <Plasteel>20</Plasteel>
+      <MR_Sarira>8</MR_Sarira>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.72</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <recipeMaker>
+      <recipeUsers>
+        <li>MR_retrofittable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MaruRC4</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MR_WhalingHarpoonBT_Thrown</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>30</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  <equippedAngleOffset>40</equippedAngleOffset>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>MR_WhalingHarpoonBT_Thrown</defName>
+    <label>Whaling Harpoon</label>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_BT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+      <speed>30</speed>
+      <extraDamages>
+        <li>
+          <def>EMP</def>
+          <amount>1</amount>
+          <chance>1</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+  
+  <!--사슬-->
+  <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+  
+  <PawnKnockback.DamageKnockbackDef>
+    <bulletTipDef>MaruBulletExecutionerChain</bulletTipDef>
+    <!--살짝 스파겟티이긴하지만 어쩔수 없음... 이거 쓰는 총알 데프-->
+    <noKnockbackIfDeflected>false</noKnockbackIfDeflected>
+    <!--true일시 갑옷같은것 떄문에 데미지가 0으로 최종 계산 될시 땡기거나 넉백하지 않고 틩겨내기-->
+
+    <pullInstead>true</pullInstead>
+    <!--true로 할시 넉백대신 작살처럼 땡겨온다...!-->
+    <pullToNearbySpotInstead>true</pullToNearbySpotInstead>
+    <!--true로 할시 밑에 있는 knockbackRadiusMin/Max와 상관없이 쏜사람의 옆으로 당기게됨-->
+    <knockbackSpeedMultiplier>1</knockbackSpeedMultiplier>
+    <!--넉백시 얼마나 빠른지 곱셈-->
+    <knockbackHeightMultiplier>0</knockbackHeightMultiplier>
+    <!--넉백시 얼마나 위로 뜨는지 곱셈-->
+    <knockbackRadiusMin>6.0</knockbackRadiusMin>
+    <!--넉백 최대/최소 범위-->
+    <knockbackRadiusMax>6.0</knockbackRadiusMax>
+
+    <landingDamage>Cut</landingDamage> 
+    <!--이거 비워놓을시 착지 데미지 없음-->
+    <landingDamageAmount>5.0</landingDamageAmount>
+    <!--넉백맞은후 공중에 떠서 착지시 데미지-->
+
+    <useHarpoonGraphic>true</useHarpoonGraphic>
+    <harpoonUseHarpoonUnitInstead>true</harpoonUseHarpoonUnitInstead>
+    <harpoonUnit>0.5</harpoonUnit>
+    <harpoonSineZAmp>1</harpoonSineZAmp>
+    <harpoonSineSpeed>0.1</harpoonSineSpeed>
+    <harpoonSegements>40</harpoonSegements>
+
+    <graphicDataHarpoonRope>
+      <texPath>Things/Weapons/MRHarpoon_Rope</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicDataHarpoonRope>
+
+    <flyerToApply>MR_KnockbackFlyerDef</flyerToApply>
+    <!--thingClass PawnKnockback.PawnKnockback 외 의 값을간진 flyer를 넣을수 있지만, 그떈 위의 설정이 반영이 안됨-->
+    <emptyFlyerToApply>MR_EmptyPullFlyerDef</emptyFlyerToApply>
+    <!--아무것도 못 맟췄을시 적용, 단 제대로 작동하려면 총알에 comp를 달아야함-->
+
+    <defName>MR_ChainDamageDef</defName>
+    <label>knockback damage</label>
+    <workerClass>PawnKnockback.DamageWorker_Knockback</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death by an harpoon.</deathMessage>
+    <hediff>Cut</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>MR_RopeSound</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+
+    <defaultDamage>1</defaultDamage>
+    <defaultArmorPenetration>0.2</defaultArmorPenetration>
+  </PawnKnockback.DamageKnockbackDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>MR_KnockbackFlyerDef</defName>
+    <thingClass>PawnKnockback.PawnKnockback</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>6.2</flightDurationMin>
+      <flightSpeed>7.5</flightSpeed>
+      <!--<flightEffecterDef>JumpFlightEffect</flightEffecterDef>-->
+      <soundLanding>MarubowSE_W</soundLanding>
+    </pawnFlyer>
+  </ThingDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>MR_EmptyPullFlyerDef</defName>
+    <thingClass>PawnKnockback.PawnEmptyFlyer</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>2</flightDurationMin>
+      <flightSpeed>12</flightSpeed>
+      <soundLanding>MarubowSE_W</soundLanding>
+    </pawnFlyer>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>MaruBulletExecutionerChain</defName>
+    <label>harpoon rope</label>
+    <thingClass>PawnKnockback.Bullet_Harpoon</thingClass>
+    <graphicData>
+      <texPath>Things/Weapons/MR_WH_AT_shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>80</speed>
+      <extraDamages>
+        <li>
+          <def>MR_ChainDamageDef</def>
+          <amount>2</amount>
+          <chance>0.5</chance>
+        </li>
+      </extraDamages>
+    </projectile>
+    <comps>
+      <li Class="PawnKnockback.CompProperties_HarpoonAttributes">
+        <damageKnockbackDef>MR_ChainDamageDef</damageKnockbackDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee덫eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-->
+
+  <!--
+<ThingDef Name="TrapMRBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconOffset>(0,-0.14)</uiIconOffset>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2</Mass>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <building>
+      <isTrap>true</isTrap>
+      <trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>IEDs</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="TrapMRBase">
+    <defName>TrapIMR</defName>
+     <label>설치형 덫</label>
+    <description>간단한 구조의 철제 덫입니다.\n\n스프링만 다시 당겨놓는다면 언제든지 재사용이 가능합니다.</description>
+      <graphicData>
+      <texPath>Things/Building/Weapons/MR_T_W</texPath>
+    </graphicData>
+    <costList>
+      <Shell_HighExplosive>2</Shell_HighExplosive>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>
+    </comps>
+    <specialDisplayRadius>3.9</specialDisplayRadius>
+  </ThingDef>
+-->
+  
+  
+   
+ 
+</Defs>

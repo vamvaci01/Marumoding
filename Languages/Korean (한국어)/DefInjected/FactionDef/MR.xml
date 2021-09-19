@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Maru_PlayerFaction.label>Clan</Maru_PlayerFaction.label>
+  <Maru_PlayerFaction.description>당신의 정착지입니다.</Maru_PlayerFaction.description>
+  <Maru_PlayerFaction.pawnSingular>Maru</Maru_PlayerFaction.pawnSingular>
+  <Maru_PlayerFaction.pawnsPlural>Snow Leopards</Maru_PlayerFaction.pawnsPlural>
+  <MRF_Hyperborea.pawnSingular>Maru</MRF_Hyperborea.pawnSingular>
+  <MRF_Hyperborea.pawnsPlural>Snow Leopards</MRF_Hyperborea.pawnsPlural>
+  <MRF_Hyperborea.leaderTitle>Head</MRF_Hyperborea.leaderTitle>
+  <MRF_Hyperborea.label>upper mountain</MRF_Hyperborea.label>
+  <MRF_Hyperborea.description>test.</MRF_Hyperborea.description>
+</LanguageData>

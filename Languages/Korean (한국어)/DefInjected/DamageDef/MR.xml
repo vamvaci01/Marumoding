@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MR_Crystallization.label>결정화</MR_Crystallization.label>
+  <MR_Crystallization.deathMessage>{0} has been cut to death.</MR_Crystallization.deathMessage>
+  <MR_Pulse_a.label>Pulse arrow</MR_Pulse_a.label>
+  <MR_Pulse_a.deathMessage>{0} has died in an Pulse.</MR_Pulse_a.deathMessage>
+</LanguageData>

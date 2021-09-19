@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="MR_PawnBase">
+    <defName>Maru</defName>
+    <label>Maru</label>
+    <description>이름모를 문명의 폐허 위에서 살아가는 종족입니다. 극북인, 설인 이라고도 불리며 넓은 반경에 걸쳐 소규모 사회를 이루어 삽니다.</description>
+    <alienRace>
+		<generalSettings>
+			<maleGenderProbability>0</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+      <humanRecipeImport>true</humanRecipeImport>
+      <canLayDown>true</canLayDown>
+			<maxDamageForSocialfight>6</maxDamageForSocialfight>
+      <immuneToXenophobia>false</immuneToXenophobia>
+      <traitCount>3~4</traitCount>
+      <disallowedTraits>
+        <li>
+          <defName>SpeedOffset</defName>
+          <degree>-1</degree>
+        </li>
+        <li>
+          <defName>CreepyBreathing</defName>
+        </li>
+        <li>
+          <defName>BodyPurist</defName>
+        </li>
+      </disallowedTraits>
+
+      <chemicalSettings></chemicalSettings>
+
+<!--=파트제네레이터==========================================================================================-->
+      <alienPartGenerator>
+        <aliencrowntypes>
+          <li>MRhead_1</li>
+          <li>MRhead_2</li>
+          <li>MRhead_3</li>
+          <li>MRhead_4</li>
+          <li>MRhead_5</li>
+          <li>MRhead_6</li>
+        </aliencrowntypes>
+        <alienbodytypes>
+            <li>Female</li>
+        </alienbodytypes>
+        <headOffset>(-0.07, -0.06)</headOffset>
+        <useGenderedHeads>false</useGenderedHeads>
+        <useGenderedBodies>false</useGenderedBodies>
+        <!-- 신체 드로잉 크기 -->
+        <customDrawSize>(1.0, 1.0)</customDrawSize>
+        <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+        <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+        <!--스킨컬러-->
+
+        				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+                <li>
+                  <weight>10</weight>
+                  <only>(255,255,255)</only>
+                </li>
+							</options>
+						</first>				
+					</li>
+        <!--헤어컬러-->
+					<li>
+						<name>hair</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+            <!-- 1 -->
+            <!--<li>
+              <weight>1</weight>
+              <min>(0.1,0.1,0.1)</min>
+              <max>(0.1,0.1,0.1)</max>
+            </li>-->
+            <!-- 2 -->
+            <li>
+              <weight>30</weight>
+              <min>(1.0,1.0,1.0)</min>
+              <max>(1.0,1.0,1.0)</max>
+            </li>
+                
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+
+
+        <!-- 신체 부착물 -->
+            <bodyAddons>
+              <!-- 꼬리 -->
+              <li>
+                <drawSize>1</drawSize>
+                <path>marulike/Tails/MRTail</path>
+                <bodyPart>tail</bodyPart>
+                <inFrontOfBody>false</inFrontOfBody>
+                <colorChannel>skin</colorChannel>
+                <drawnInBed>false</drawnInBed>
+                <offsets>
+                  <south>
+                    <bodyTypes>
+                      <Female>(-0.418,0.221)</Female>
+                    </bodyTypes>
+                  </south>
+                  <north>
+                    <bodyTypes>
+                      <Female>(0.003,0.536)</Female>
+                    </bodyTypes>
+                  </north>
+                  <east>
+                    <bodyTypes>
+                      <Female>(-0.434,0.212)</Female>
+                    </bodyTypes>
+                  </east>
+                </offsets>
+              </li>
+
+              <!-- 꼬리물기
+              <li>
+                <drawSize>1</drawSize>
+                <path>marulike/Tails/bite/MRTailbitD</path>
+                <bodyPart>tail</bodyPart>
+                <inFrontOfBody>false</inFrontOfBody>
+                <colorChannel>skin</colorChannel>
+                <offsets>
+                  <south>
+                    <bodyTypes>
+                      <Female>(-0.418,0.221)</Female>
+                    </bodyTypes>
+                  </south>
+                  <north>
+                    <bodyTypes>
+                      <Female>(0.003,0.536)</Female>
+                    </bodyTypes>
+                  </north>
+                  <east>
+                    <bodyTypes>
+                      <Female>(-0.414,0.212)</Female>
+                    </bodyTypes>
+                  </east>
+                </offsets>
+              </li> -->
+
+              <!--왼쪽귀-->
+              <li>
+                <path>marulike/Ear/MRleftEar</path>
+                <bodyPart>left ear</bodyPart>
+                <inFrontOfBody>true</inFrontOfBody>
+                <colorChannel>skin</colorChannel>
+                <drawSize>1</drawSize>
+                <angle>0</angle>
+                <offsets>
+                  <south>
+                    <bodyTypes>
+                      <Female>(-0.421,0.5035)</Female>
+                    </bodyTypes>
+                  </south>
+                  <north>
+                    <bodyTypes>
+                      <Female>(-0.0,0.8314)</Female>
+                    </bodyTypes>
+                  </north>
+                  <east>
+                    <bodyTypes>
+                      <Female>(-0.4474,0.506)</Female>
+                    </bodyTypes>
+                  </east>
+                </offsets>
+              </li>
+              <!--오른쪽귀-->
+              <li>
+                <path>marulike/Ear/MRrightEar</path>
+                <bodyPart>right ear</bodyPart>
+                <inFrontOfBody>true</inFrontOfBody>
+                <colorChannel>skin</colorChannel>
+                <drawSize>1</drawSize>
+                <angle>0</angle>
+                <offsets>
+                  <south>
+                    <bodyTypes>
+                      <Female>(-0.421,0.5035)</Female>
+                    </bodyTypes>
+                  </south>
+                  <north>
+                    <bodyTypes>
+                      <Female>(-0.0,0.8314)</Female>
+                    </bodyTypes>
+                  </north>
+                  <east>
+                    <bodyTypes>
+                      <Female>(-0.4474,0.506)</Female>
+                    </bodyTypes>
+                  </east>
+                </offsets>
+              </li>
+        </bodyAddons>
+		  </alienPartGenerator>
+      
+    </generalSettings>  
+      
+<!--텍스처경로-->
+        <graphicPaths>
+            <li>
+                <head>marulike/Heads/</head>
+                <body>marulike/Bodies/</body>
+                <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+            </li>
+        </graphicPaths>
+      
+        <hairSettings>
+            <hasHair>true</hasHair>
+            <hairTags>
+                <li>MRhair</li>
+            </hairTags>
+        </hairSettings>
+      
+      <relationSettings>
+
+      </relationSettings>
+      
+      <thoughtSettings>
+        
+        
+      </thoughtSettings>
+      
+      
+<!--=============================================================================================================================-->
+      <raceRestriction>
+        <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+            <apparelList>
+              <li>MR_RangedCombatSuit</li>
+              <li>MR_MeleeCombatSuit</li>
+              <li>MR_huntingmask</li>
+              <li>MR_huntingmaskR</li>
+              <li>MR_huntingmaskM</li>
+              <li>MR_DeciphersLC</li>
+              <li>MR_durumagi</li>
+              <li>MR_DeciphersHD</li>
+              <li>MR_sanitarycoat</li>
+              <li>MR_wintercoat</li>
+              <li>MR_HuntingCoat</li>
+              <li>MR_Decipherslifecoat</li>
+              <li>MR_Deciphersrobes</li>
+              <li>MR_Decipherslifeclothes</li>
+              <li>MR_cookclothes</li>
+              <li>MR_workclothes</li>
+              <li>MR_engineeringclothes</li>
+              <li>MR_farmclothes</li>
+              <li>MR_sanitaryclothing</li>
+              <li>MR_huntingsuit</li>
+              <li>MR_merchantsclothes</li>
+              <li>MR_thermalhat</li>
+            </apparelList>
+			    <whiteApparelList>
+		    	</whiteApparelList>
+            <buildingList>
+            </buildingList>
+            	<weaponList>
+				</weaponList>
+        </raceRestriction>
+	</alienRace>
+<!--=============================================================================================================================-->
+    <statBases>
+	<!--기본-->
+      <MarketValue>3000</MarketValue>
+      <Flammability>0.5</Flammability>
+      <MoveSpeed>5.2</MoveSpeed>
+	  <MentalBreakThreshold>0.2</MentalBreakThreshold>
+      <ComfyTemperatureMax>20</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+	  <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
+	  <CarryingCapacity>75</CarryingCapacity>
+	  <MeatAmount>60</MeatAmount>
+      <LeatherAmount>50</LeatherAmount>
+      <Mass>55</Mass>
+	  <PainShockThreshold>0.80</PainShockThreshold>
+    <PsychicSensitivity>1.2</PsychicSensitivity>
+  <!-- 전투 -->
+      <MeleeDodgeChance>1.2</MeleeDodgeChance>
+      <MeleeHitChance>1</MeleeHitChance>
+      <AimingDelayFactor>1.0</AimingDelayFactor>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+	<!--사교-->
+	  <NegotiationAbility>0.8</NegotiationAbility> <!--외교 영향력-->
+	  <SellPriceFactor>0.8</SellPriceFactor> <!--거래 가격 개선-->
+	  <SocialImpact>0.8</SocialImpact> <!--사회적 영향력-->
+	<!--제작-->
+	  <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> <!--메카노이드 분해 효율-->
+	  <ButcheryMechanoidSpeed>1.0</ButcheryMechanoidSpeed> <!--메카노이드 분해 속도-->
+	  <SmeltingSpeed>1.0</SmeltingSpeed> <!--금속 제련 속도-->
+	  <!--<SmithingSpeed>1.0</SmithingSpeed>--> <!--제련 속도-->
+	  <GeneralLaborSpeed>1.0</GeneralLaborSpeed> <!--재단 속도-->
+	<!--조리-->
+	  <ButcheryFleshEfficiency>1.2</ButcheryFleshEfficiency> <!--도축 효율-->
+	  <ButcheryFleshSpeed>2.0</ButcheryFleshSpeed> <!--도축 속도-->
+	  <FoodPoisonChance>1.0</FoodPoisonChance> <!--식중독 확률-->
+	  <CookSpeed>1.0</CookSpeed> <!--조리 속도-->
+	<!--수면-->
+	  <RestRateMultiplier>1.25</RestRateMultiplier>
+	<!--재배-->
+	  <PlantWorkSpeed>1.0</PlantWorkSpeed>
+  <!--의학및연구-->
+    <ResearchSpeed>1.0</ResearchSpeed>  <!--연구 속도-->
+    <MedicalTendQuality>1.0</MedicalTendQuality>
+    <DrugSynthesisSpeed>1.0</DrugSynthesisSpeed>
+    <MedicalSurgerySuccessChance>1.0</MedicalSurgerySuccessChance>
+  <!--채굴-->
+   	<MiningSpeed>1.0</MiningSpeed>
+		<MiningYield>1.0</MiningYield>
+      
+      
+    </statBases>
+<!--==맨손전투===================================================================================================================-->
+    <tools>
+      <li>
+        <label>left claws</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claws</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.1</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>5</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>Teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Bite</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <chanceFactor>0.4</chanceFactor>
+      </li>
+    </tools>
+<!--=============================================================================================================================-->
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>120</lifeExpectancy>
+      <leatherDef>Leather_Human</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <hasGenders>true</hasGenders>
+	    <body>Maru</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>30</gestationPeriodDays>
+      <litterSizeCurve>
+				<points>
+          <li>(0, 0)</li>
+          <li>(1, 5)</li>
+          <li>(2, 10)</li>
+          <li>(3, 0)</li>
+				</points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>12</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,60)</li>
+          <li>(22,100)</li>
+          <li>(30,30)</li>
+          <li>(60,5)</li>
+          <li>(80,1)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+        <li>MR_standard</li>
+        <li>Human</li>
+      </hediffGiverSets>
+    </race>
+    	<!--=============================================================================================================================-->
+		<comps>
+			<li Class="HPF.CompProperties_ResourceHarvestable">
+				<harvestJobDef>ExtractSarira_Job</harvestJobDef>
+				<saveUniqueKey>HPFSariraFullness</saveUniqueKey>
+				<thingDef>MR_Sarira</thingDef>
+				<intervalDays>3</intervalDays>
+				<amount>1</amount>
+				<inspectText>Maru Sarira</inspectText>
+				<constraints>
+					<li Class="HPF.ConstraintPawnAgeOver">
+						<age>7</age>
+					</li>
+				</constraints>
+			</li>
+		</comps>
+<!--=============================================================================================================================-->
+    <recipes>
+      <li>InstallArchotechEye</li>
+      <li>InstallArchotechArm</li>
+      <li>InstallArchotechLeg</li>
+      <li>InstallPowerClaw</li>
+      <li>InstallBionicEye</li>
+      <li>InstallBionicArm</li>
+      <li>InstallBionicLeg</li>
+      <li>InstallBionicSpine</li>
+      <li>InstallBionicHeart</li>
+      <li>InstallBionicStomach</li>
+      <li>InstallBionicEar</li>
+      <li>InstallSimpleProstheticArm</li>
+      <li>InstallSimpleProstheticLeg</li>
+      <li>InstallSimpleProstheticHeart</li>
+      <li>InstallCochlearImplant</li>
+      <li>InstallPegLeg</li>
+      <li>InstallWoodenFoot</li>
+      <li>InstallDenture</li>
+      <li>InstallJoywire</li>
+      <li>InstallPainstopper</li>
+      <li>InstallNaturalHeart</li>
+      <li>InstallNaturalLung</li>
+      <li>InstallNaturalKidney</li>
+      <li>InstallNaturalLiver</li>
+      <li>ExciseCarcinoma</li>
+      <li>AdministerMechSerumHealer</li>
+      <li>RemoveBodyPart</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+    </recipes>
+</AlienRace.ThingDef_AlienRace>
+</Defs>

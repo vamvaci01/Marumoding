@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MR_Sarira.label>사리</MR_Sarira.label>
+  <MR_Sarira.description>마루들의 몸에서 자연 생성되는, 선조의 기술이 담긴 구슬입니다.\n\n구슬에 새겨진 기술은 개체에 따라 다르며, 읽고자 하는 기술의 종류에 따라 제각각 특수한 해석 방법을 지닙니다.\n사리가 지니는 이 까다로운 해석방법과 정보전달방식은 이를 연구하고자하는 해석가 마루들이 자연스레 모이는 이유가 되었습니다.</MR_Sarira.description>
+  <MR_RangedCombatSuit.description>특수한 상황에서 사냥을 보조해주는 경량 강화복입니다.\n\n이해하지 못한 기술들을 누더기처럼 기워 맞춘 모양새지만, 사냥감을 쫒기엔 충분합니다.</MR_RangedCombatSuit.description>
+  <MR_RangedCombatSuit.label>Maru Lightweight Reinforcement Suit</MR_RangedCombatSuit.label>
+  <MR_MeleeCombatSuit.description>특수한 상황에서 사냥을 보조해주는 중량 강화복입니다.\n\n두터운 코트 밑에 금속판을 덧댄 원시적인 방어구로 보이지만, 아직 완벽히 해석하지 못한 실험적인 기술들이 담겨있습니다.</MR_MeleeCombatSuit.description>
+  <MR_MeleeCombatSuit.label>Maru Heavy Reinforcement Suit</MR_MeleeCombatSuit.label>
+  <MR_huntingmask.description>사냥꾼 마루들이 사용하는 가면입니다.\n\n사냥에 필요한 수준의 방어력과, 위압감을 제공합니다.</MR_huntingmask.description>
+  <MR_huntingmask.label>Maru Hunting Mask</MR_huntingmask.label>
+  <MR_huntingmaskR.description>사냥꾼 마루들이 사용하는 가면입니다.\n\n양쪽 통의 밸브를 조절해 신체의 감각을 더욱 예민하고 날카롭게 만들 수 있도록 개조되었습니다.</MR_huntingmaskR.description>
+  <MR_huntingmaskR.label>Maru Modified Hunting Mask</MR_huntingmaskR.label>
+  <MR_huntingmaskM.description>산지기 마루들이 사용하는 가면입니다.\n\n작동원리가 정확히 밝혀지지 않은 고대의 기술들을 이용해 개조되었습니다.</MR_huntingmaskM.description>
+  <MR_huntingmaskM.label>Maru Mountain Ranger's Mask</MR_huntingmaskM.label>
+  <MR_DeciphersLC.description>산 위의 해석가들이 일상적으로 착용하는 모자입니다.\n\n방한, 보호, 신분증명 및 멋내기의 역할을 겸합니다.</MR_DeciphersLC.description>
+  <MR_DeciphersLC.label>Deciphers Life Cap</MR_DeciphersLC.label>
+  <MR_durumagi.description>마루들이 일상적으로 착용하는 외투입니다.\n\n바람막이와 같은 역할을 하지만, 조금 더 두껍고 예스러운 옷입니다.</MR_durumagi.description>
+  <MR_durumagi.label>Maru Durumagi</MR_durumagi.label>
+  <MR_DeciphersHD.description>해석가들의 삽입형 머리장식입니다.\n\n머리장식 내부에 있는 장치가 집중을 보조하며, 역장을 통해 어느 정도의 방어력을 제공해줍니다.</MR_DeciphersHD.description>
+  <MR_DeciphersHD.label>Maru Deciphers Headdress</MR_DeciphersHD.label>
+  <MR_sanitarycoat.description>위생이 필요한 작업에 사용되는 외투입니다.\n\n흰 외투로 오염상태를 파악하기 쉬우며, 용균제가 코팅되어있는 내부 원단과 겉면에 해당하는 흰 면을 분리할 수 있어 관리 및 소독에 용이합니다.</MR_sanitarycoat.description>
+  <MR_sanitarycoat.label>Maru Sanitary Coat</MR_sanitarycoat.label>
+  <MR_wintercoat.description>추위를 이겨내기 위한 두터운 외투입니다.\n\n모성에 살던 짐승의 털가죽을 참고하여 만들어진 구조로, 대단히 따뜻하고 부드럽습니다.</MR_wintercoat.description>
+  <MR_wintercoat.label>Maru Winter Coat</MR_wintercoat.label>
+  <MR_HuntingCoat.description>사냥을 위한 외투입니다.\n\n추가적인 방어력을 제공하며, 사냥감에게 추적당할 여지를 없애는 다양한 물건들을 휴대할 수 있습니다.</MR_HuntingCoat.description>
+  <MR_HuntingCoat.label>Maru Hunting Coat</MR_HuntingCoat.label>
+  <MR_Decipherslifecoat.description>산 위의 해석가들이 일상적으로 입는 외투입니다.\n\n해석가는 수많은 마루들 중에서도 드물게 간헐천 근처의 실내에서 생활하기 때문에, 다른 외투에 비해 얇고 짧은 형태를 띠고 있습니다.</MR_Decipherslifecoat.description>
+  <MR_Decipherslifecoat.label>Maru Decipher's Life Coat</MR_Decipherslifecoat.label>
+  <MR_Deciphersrobes.description>해석가들의 예복입니다.\n\n옷에 내장된 가속장치가 몸을 가볍게 하고 정신을 더욱 날카롭게 벼려줍니다.\n산 위에 사는 인간, 마루의 어원이 되었던 최초의 해석가들의 시대부터 지금까지 같은 양식이 전해져 내려오고 있습니다.</MR_Deciphersrobes.description>
+  <MR_Deciphersrobes.label>Maru Decipher's Robe</MR_Deciphersrobes.label>
+  <MR_Decipherslifeclothes.description>산 위의 해석가들이 일상적으로 입는 의복입니다.\n\n단정하면서 활동성 있는 옷으로, 폐허에서 발굴해낸 선조의 양식으로 만들어졌습니다.</MR_Decipherslifeclothes.description>
+  <MR_Decipherslifeclothes.label>Maru Decipher's Life Clothes</MR_Decipherslifeclothes.label>
+  <MR_cookclothes.description>요리를 위한 조리복입니다.\n\n과거 마루들의 사회에서는 영향력과 힘, 그 두 가지를 모두 갖춘 마루만이 조리기구에 손을 댈 자격을 얻었습니다.\n비록 현재에 이르러서는 일부 무리의 전통으로만 남아있는 풍습이지만, 그럼에도 아직까지 요리는 마루들에게 큰 의미를 가집니다.</MR_cookclothes.description>
+  <MR_cookclothes.label>Maru Cook Outfit</MR_cookclothes.label>
+  <MR_workclothes.description>여러가지 제작활동을 위한 작업복입니다.\n\n쉽게 입을 수 있고, 움직이기에 불편함이 없으며, 도구들의 휴대에 유용합니다.</MR_workclothes.description>
+  <MR_workclothes.label>Maru Work Outfit</MR_workclothes.label>
+  <MR_engineeringclothes.description>건설과 채굴을 위한 작업복입니다.\n\n고리에 연결된 로프에 갖가지 공구들을 매달아 간편하게 휴대할 수 있습니다.</MR_engineeringclothes.description>
+  <MR_engineeringclothes.label>Maru Engineering Outfit</MR_engineeringclothes.label>
+  <MR_farmclothes.description>빠른 채집과 운반을 위한 작업복입니다.\n\n마루들의 표준적인 외부활동복으로, 먼 길을 가더라도 지치지 않도록 고안된 효율적인 구조로 되어있습니다.</MR_farmclothes.description>
+  <MR_farmclothes.label>Maru Forager's Outfit</MR_farmclothes.label>
+  <MR_sanitaryclothing.description>위생이 중요한 작업에 사용되는 작업복입니다.\n\n다소 불편할 정도로 몸에 딱 맞게 만들어졌지만, 옷감 겉면에 코팅된 용균제가 지속적인 멸균작용을 가능케 합니다.</MR_sanitaryclothing.description>
+  <MR_sanitaryclothing.label>Maru Sanitary Clothing</MR_sanitaryclothing.label>
+  <MR_huntingsuit.description>사냥을 위한 옷입니다.\n\n대부분의 사냥꾼들이 애용하며, 위장, 보호, 방한의 역할을 모두 수행합니다.</MR_huntingsuit.description>
+  <MR_huntingsuit.label>Maru Hunting Suit</MR_huntingsuit.label>
+  <MR_thermalhat.description>얼음과 눈 사이를 뚫고 물건들을 나르는 방랑상인들의 모자입니다.\n\n마루 상인은 극한지에서 주로 활동하기 때문에, 항상 두터운 모자와 옷들을 착용하고 눈밭을 누빕니다.</MR_thermalhat.description>
+  <MR_thermalhat.label>Deciphers Life Cap</MR_thermalhat.label>
+  <MR_merchantsclothes.description>얼음과 눈 사이를 뚫고 물건들을 나르는 방랑상인들의 옷입니다.\n\n마루 상인은 극한지에서 주로 활동하기 때문에, 항상 두터운 모자와 옷들을 착용하고 눈밭을 누빕니다.</MR_merchantsclothes.description>
+  <MR_merchantsclothes.label>Maru Caravan Clothes</MR_merchantsclothes.label>
+  <MR_retrofittable.label>Retrofit Table</MR_retrofittable.label>
+  <MR_retrofittable.description>사리를 통해 알아낸 갖가지 기술들을 실험적으로 적용시키기 위한 개조 작업대입니다.\n\n겉보기엔 잡동사니를 대충 쌓아놓은 것으로 보이지만, 필요한 구색은 모두 갖추고 있습니다.</MR_retrofittable.description>
+  <MR_LenticularAnalyzer.label>렌즈식 해석기</MR_LenticularAnalyzer.label>
+  <MR_LenticularAnalyzer.description>정밀한 해석을 위해 만들어진 렌즈식 해석기입니다.\n\n빛의 방향을 유도하도록 정밀하게 세공된 유리가 빛의 파형을 교란시켜 렌즈 겉면에 특이한 문양을 만들어냅니다.</MR_LenticularAnalyzer.description>
+  <MR_BiometricAnalyzer.label>생체 해석기</MR_BiometricAnalyzer.label>
+  <MR_BiometricAnalyzer.description>정밀한 해석을 위해 만들어진 생체 해석기입니다.\n\n거대한 원통 안에서 갖가지 생체 부품들이 유기적으로 움직이며 더욱 다양한 해석을 가능케 합니다.</MR_BiometricAnalyzer.description>
+  <MR_Trap.label>설치형 덫</MR_Trap.label>
+  <MR_Trap.description>간단한 구조의 철제 덫입니다.\n\n스프링만 다시 당겨놓는다면 언제든지 재사용이 가능합니다.</MR_Trap.description>
+  <MR_C_O.label>Cleaver</MR_C_O.label>
+  <MR_C_O.description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.</MR_C_O.description>
+  <MR_C_O.tools.0.label>handle</MR_C_O.tools.0.label>
+  <MR_C_O.tools.1.label>edge</MR_C_O.tools.1.label>
+  <MR_C_AO.label>Cleaver : Reinforcement</MR_C_AO.label>
+  <MR_C_AO.description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n부속장치를 추가하고 날을 덧댔습니다.</MR_C_AO.description>
+  <MR_C_AO.tools.0.label>handle</MR_C_AO.tools.0.label>
+  <MR_C_AO.tools.1.label>edge</MR_C_AO.tools.1.label>
+  <MR_C_AT.label>Cleaver : Crystallization</MR_C_AT.label>
+  <MR_C_AT.description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n사리로부터 해석해낸 기술을 이용해 더욱 치명적인 상처를 남길 수 있도록 개조되었습니다.</MR_C_AT.description>
+  <MR_C_AT.tools.0.label>handle</MR_C_AT.tools.0.label>
+  <MR_C_AT.tools.1.label>edge</MR_C_AT.tools.1.label>
+  <MR_C_BO.label>Cleaver : Cutting</MR_C_BO.label>
+  <MR_C_BO.description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n날 부분에 전기톱을 달아 절삭력을 증가시켰습니다.</MR_C_BO.description>
+  <MR_C_BO.tools.0.label>handle</MR_C_BO.tools.0.label>
+  <MR_C_BO.tools.1.label>edge</MR_C_BO.tools.1.label>
+  <MR_C_BT.label>Cleaver : Slaughter</MR_C_BT.label>
+  <MR_C_BT.description>고기를 썰기위한 두꺼운 날을 가진 칼입니다.\n소형화시킨 가속장치를 이용해 날의 회전력을 증대시켰습니다.</MR_C_BT.description>
+  <MR_C_BT.tools.0.label>handle</MR_C_BT.tools.0.label>
+  <MR_C_BT.tools.1.label>edge</MR_C_BT.tools.1.label>
+  <MR_HA_O.label>Hand Axe</MR_HA_O.label>
+  <MR_HA_O.description>다양한 곳에 쓰이는 손도끼입니다.</MR_HA_O.description>
+  <MR_HA_O.tools.0.label>handle</MR_HA_O.tools.0.label>
+  <MR_HA_O.tools.1.label>edge</MR_HA_O.tools.1.label>
+  <MR_HA_O.tools.2.label>point</MR_HA_O.tools.2.label>
+  <MR_HandaxeO_Thrown.label>Whaling Harpoon</MR_HandaxeO_Thrown.label>
+  <MR_HA_AO.label>Hand Axe : Delay</MR_HA_AO.label>
+  <MR_HA_AO.description>다양한 곳에 쓰이는 손도끼입니다.\n파괴력은 유지시킨 채로 더욱 더 먼 거리를 공격할 수 있도록 개조되었습니다.</MR_HA_AO.description>
+  <MR_HA_AO.tools.0.label>handle</MR_HA_AO.tools.0.label>
+  <MR_HA_AO.tools.1.label>edge</MR_HA_AO.tools.1.label>
+  <MR_HandaxeAO_Thrown.label>Hand Axe AO</MR_HandaxeAO_Thrown.label>
+  <MR_HA_AT.label>Hand Axe : throwing</MR_HA_AT.label>
+  <MR_HA_AT.description>다양한 곳에 쓰이는 손도끼입니다.\n두가지 간섭장치를 병행해서 사용해 파괴력과 사정거리를 끌어올렸습니다.</MR_HA_AT.description>
+  <MR_HA_AT.tools.0.label>handle</MR_HA_AT.tools.0.label>
+  <MR_HA_AT.tools.1.label>edge</MR_HA_AT.tools.1.label>
+  <MR_HandaxeAT_Thrown.label>Whaling Harpoon</MR_HandaxeAT_Thrown.label>
+  <MR_HA_BO.label>Hand Axe : Tracking</MR_HA_BO.label>
+  <MR_HA_BO.description>다양한 곳에 쓰이는 손도끼입니다.\n몇가지 부속장치를 추가해 더욱 강한 파괴력을 지닙니다.</MR_HA_BO.description>
+  <MR_HA_BO.tools.0.label>handle</MR_HA_BO.tools.0.label>
+  <MR_HA_BO.tools.1.label>edge</MR_HA_BO.tools.1.label>
+  <MR_HandaxeBO_Thrown.label>Whaling Harpoon</MR_HandaxeBO_Thrown.label>
+  <MR_HA_BT.label>Hand Axe : Hunting</MR_HA_BT.label>
+  <MR_HA_BT.description>다양한 곳에 쓰이는 손도끼입니다.\n거대한 맹수를 사냥하기 위해 파괴력을 극한까지 끌어올렸습니다.</MR_HA_BT.description>
+  <MR_HA_BT.tools.0.label>handle</MR_HA_BT.tools.0.label>
+  <MR_HA_BT.tools.1.label>edge</MR_HA_BT.tools.1.label>
+  <MR_HandaxeBT_Thrown.label>HandaxeBT_Thrown</MR_HandaxeBT_Thrown.label>
+  <MR_CPB_O.label>Compound Bow</MR_CPB_O.label>
+  <MR_CPB_O.description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.</MR_CPB_O.description>
+  <MR_CPB_O.tools.0.label>limb</MR_CPB_O.tools.0.label>
+  <Arrow_GreatO.label>greatbow arrowO</Arrow_GreatO.label>
+  <MR_CPB_AO.label>Compound Bow : High Mass</MR_CPB_AO.label>
+  <MR_CPB_AO.description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n특수한 처리를 한 창과 같은 화살을 사용합니다.</MR_CPB_AO.description>
+  <MR_CPB_AO.tools.0.label>limb</MR_CPB_AO.tools.0.label>
+  <Arrow_GreatAO.label>greatbow arrowB</Arrow_GreatAO.label>
+  <MR_CPB_AT.label>Compound Bow : Pulse</MR_CPB_AT.label>
+  <MR_CPB_AT.description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n펄스를 이용하는 특수한 화살을 사용하여 넓은 범위에 충격을 흩뿌립니다.</MR_CPB_AT.description>
+  <MR_CPB_AT.tools.0.label>limb</MR_CPB_AT.tools.0.label>
+  <Arrow_Pulse.label>Pulse arrow</Arrow_Pulse.label>
+  <MR_Pulse_sub.label>Pulsesubarrow</MR_Pulse_sub.label>
+  <Arrow_GreatAT.label>greatbow arrowB</Arrow_GreatAT.label>
+  <Mote_Pulse.label>Mote</Mote_Pulse.label>
+  <MR_CPB_BO.label>Compound Bow : Explosive</MR_CPB_BO.label>
+  <MR_CPB_BO.description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n표적에 닿을 시 폭발하는 특수한 화살을 이용합니다.</MR_CPB_BO.description>
+  <MR_CPB_BO.tools.0.label>limb</MR_CPB_BO.tools.0.label>
+  <Arrow_GreatBO.label>greatbow arrowA</Arrow_GreatBO.label>
+  <MR_CPB_BT.label>Compound Bow : Propulsion</MR_CPB_BT.label>
+  <MR_CPB_BT.description>긴 사정거리와 강력한 파괴력을 가진 살상용 무기입니다.\n화살에 추진기를 달아 보다 멀리, 보다 빠르게 공격을 가능케 합니다.</MR_CPB_BT.description>
+  <MR_CPB_BT.tools.0.label>limb</MR_CPB_BT.tools.0.label>
+  <Arrow_GreatBT.label>greatbow arrowBT</Arrow_GreatBT.label>
+  <MR_WH_O.label>Whaling Harpoon</MR_WH_O.label>
+  <MR_WH_O.description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.</MR_WH_O.description>
+  <MR_WH_O.tools.0.label>shaft</MR_WH_O.tools.0.label>
+  <MR_WH_O.tools.1.label>point</MR_WH_O.tools.1.label>
+  <MR_WhalingHarpoon_Thrown.label>Whaling Harpoon</MR_WhalingHarpoon_Thrown.label>
+  <MR_WH_AO.label>Whaling Harpoon : Improvement</MR_WH_AO.label>
+  <MR_WH_AO.description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n 사냥꾼들의 수많은 경험에 기반하여 개량되었습니다.</MR_WH_AO.description>
+  <MR_WH_AO.tools.0.label>shaft</MR_WH_AO.tools.0.label>
+  <MR_WH_AO.tools.1.label>point</MR_WH_AO.tools.1.label>
+  <MR_WhalingHarpoonAO_Thrown.label>Whaling Harpoon : Improvement</MR_WhalingHarpoonAO_Thrown.label>
+  <MR_WH_AT.label>Whaling Harpoon : Rope</MR_WH_AT.label>
+  <MR_WH_AT.description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n 로프를 사용해 목표물을 끌어당길 수 있는 간섭장치가 내장 되어있습니다.</MR_WH_AT.description>
+  <MR_WH_AT.tools.0.label>shaft</MR_WH_AT.tools.0.label>
+  <MR_WH_AT.tools.1.label>point</MR_WH_AT.tools.1.label>
+  <MR_WhalingHarpoonAT_Thrown.label>Whaling Harpoon</MR_WhalingHarpoonAT_Thrown.label>
+  <MR_WH_BO.label>Whaling Harpoon : Anti-Gravity</MR_WH_BO.label>
+  <MR_WH_BO.description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n선조의 기술을 활용해 비거리를 비약적으로 늘렸습니다.</MR_WH_BO.description>
+  <MR_WH_BO.tools.0.label>shaft</MR_WH_BO.tools.0.label>
+  <MR_WH_BO.tools.1.label>point</MR_WH_BO.tools.1.label>
+  <MR_WhalingHarpoonBO_Thrown.label>Whaling Harpoon AO</MR_WhalingHarpoonBO_Thrown.label>
+  <MR_WH_BT.label>Whaling Harpoon : EMP</MR_WH_BT.label>
+  <MR_WH_BT.description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n외장된 장치를 이용해 공격에 맞은 기계들을 무력화 시킵니다.</MR_WH_BT.description>
+  <MR_WH_BT.tools.0.label>shaft</MR_WH_BT.tools.0.label>
+  <MR_WH_BT.tools.1.label>point</MR_WH_BT.tools.1.label>
+  <MR_WhalingHarpoonBT_Thrown.label>Whaling Harpoon</MR_WhalingHarpoonBT_Thrown.label>
+  <MaruBulletExecutionerChain.label>harpoon rope</MaruBulletExecutionerChain.label>
+</LanguageData>

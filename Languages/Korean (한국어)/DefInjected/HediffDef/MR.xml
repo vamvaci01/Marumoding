@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MR_HediffA.label>Renovated</MR_HediffA.label>
+  <MR_HediffA.description>"인간의 몸이 정교하게 짜 맞춰진 기계와 같다면, 이들을 만든 자들은 가히 장인이라고 불릴 만 합니다."</MR_HediffA.description>
+  <MR_HediffB.label>Renovated</MR_HediffB.label>
+  <MR_HediffB.description>"인간의 몸이 정교하게 짜 맞춰진 기계와 같다면, 이들을 만든 자들은 가히 장인이라고 불릴 만 합니다."</MR_HediffB.description>
+  <MR_HediffB.stages.0.label>Claw</MR_HediffB.stages.0.label>
+  <MRH_Crystal.label>결정화</MRH_Crystal.label>
+  <MRH_Crystal.labelNoun>결정화</MRH_Crystal.labelNoun>
+  <MRH_Crystal.description>상처 주변이 경화되어 부서집니다.</MRH_Crystal.description>
+</LanguageData>

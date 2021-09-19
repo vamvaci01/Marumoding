@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>MR_HediffA</defName>
+    <label>Renovated</label>
+    <description>"인간의 몸이 정교하게 짜 맞춰진 기계와 같다면, 이들을 만든 자들은 가히 장인이라고 불릴 만 합니다."</description>
+    <defaultLabelColor>(0.65,0.75,0.90)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1</initialSeverity>
+    <minSeverity>1</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <tendable>false</tendable>
+    <cureAllAtOnceIfCuredByItem>false</cureAllAtOnceIfCuredByItem>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="ChronicDiseaseBase">
+    <defName>MR_HediffB</defName>
+    <label>Renovated</label>
+    <description>"인간의 몸이 정교하게 짜 맞춰진 기계와 같다면, 이들을 만든 자들은 가히 장인이라고 불릴 만 합니다."</description>
+    <initialSeverity>0.001</initialSeverity>
+    <minSeverity>0.001</minSeverity>
+    <maxSeverity>0.001</maxSeverity>
+    <tendable>true</tendable>
+    <cureAllAtOnceIfCuredByItem>false</cureAllAtOnceIfCuredByItem>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>Claw</label>
+        <partEfficiencyOffset>-0.3</partEfficiencyOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>
