@@ -207,12 +207,30 @@
             </li>
         </graphicPaths>
       
-        <hairSettings>
+        <styleSettings>
             <hasHair>true</hasHair>
-            <hairTags>
-                <li>MRhair</li>
-            </hairTags>
-        </hairSettings>
+            <li>
+        <key>HairDef</key>
+        <value>
+            <hasStyle>true</hasStyle>
+            <styleTagsOverride>
+                <li>MRhair</li>
+            </styleTagsOverride>
+        </value>
+    </li>
+    <li>
+        <key>BeardDef</key>
+        <value>
+            <hasStyle>false</hasStyle>
+        </value>
+    </li>
+    <li>
+        <key>TattooDef</key>
+        <value>
+            <hasStyle>false</hasStyle>
+        </value>
+    </li>
+</styleSettings>
       
       <relationSettings>
 
