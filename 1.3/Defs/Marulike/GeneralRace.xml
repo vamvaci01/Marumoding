@@ -94,7 +94,7 @@
                 <path>marulike/Tails/MRTail</path>
                 <bodyPart>tail</bodyPart>
                 <inFrontOfBody>false</inFrontOfBody>
-                <colorChannel>skin</colorChannel>
+                <colorChannel>hair</colorChannel>
                 <drawnInBed>false</drawnInBed>
                 <offsets>
                   <south>
@@ -146,7 +146,7 @@
                 <path>marulike/Ear/MRleftEar</path>
                 <bodyPart>left ear</bodyPart>
                 <inFrontOfBody>true</inFrontOfBody>
-                <colorChannel>skin</colorChannel>
+                <colorChannel>hair</colorChannel>
                 <drawSize>1</drawSize>
                 <angle>0</angle>
                 <offsets>
@@ -172,7 +172,7 @@
                 <path>marulike/Ear/MRrightEar</path>
                 <bodyPart>right ear</bodyPart>
                 <inFrontOfBody>true</inFrontOfBody>
-                <colorChannel>skin</colorChannel>
+                <colorChannel>hair</colorChannel>
                 <drawSize>1</drawSize>
                 <angle>0</angle>
                 <offsets>
