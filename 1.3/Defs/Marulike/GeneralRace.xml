@@ -96,6 +96,8 @@
                 <inFrontOfBody>false</inFrontOfBody>
                 <colorChannel>hair</colorChannel>
                 <drawnInBed>false</drawnInBed>
+                <defaultOffset>Tail</defaultOffset> 
+                <shaderType>Cutout</shaderType>
                 <offsets>
                   <south>
                     <bodyTypes>
@@ -149,6 +151,8 @@
                 <colorChannel>hair</colorChannel>
                 <drawSize>1</drawSize>
                 <angle>0</angle>
+                <defaultOffset>Tail</defaultOffset> 
+                <shaderType>Cutout</shaderType>
                 <offsets>
                   <south>
                     <bodyTypes>
@@ -175,6 +179,8 @@
                 <colorChannel>hair</colorChannel>
                 <drawSize>1</drawSize>
                 <angle>0</angle>
+                <defaultOffset>Tail</defaultOffset> 
+                <shaderType>Cutout</shaderType>
                 <offsets>
                   <south>
                     <bodyTypes>
