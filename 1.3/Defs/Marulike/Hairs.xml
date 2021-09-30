@@ -6,9 +6,10 @@
     <label>MR_1</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_1</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -16,9 +17,10 @@
     <label>MR_2</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_2</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -26,9 +28,10 @@
     <label>MR_3</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_3</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -36,9 +39,10 @@
     <label>MR_4</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_4</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -46,9 +50,10 @@
     <label>MR_5</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_5</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -56,9 +61,10 @@
     <label>MR_6</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_6</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -66,9 +72,10 @@
     <label>MR_7</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_7</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -76,9 +83,10 @@
     <label>MR_8</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_8</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -86,9 +94,10 @@
     <label>MR_9</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_9</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -96,9 +105,10 @@
     <label>MR_10</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_10</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -106,9 +116,10 @@
     <label>MR_11</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_11</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
   <HairDef>
@@ -116,9 +127,10 @@
     <label>MR_12</label>
     <hairGender>Any</hairGender>
     <texPath>marulike/Hairs/MRHair_12</texPath>
-    <hairTags>
+    <category>MRhair</category>
+    <styleTags>
       <li>MRhair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 
 </Defs>
