@@ -262,12 +262,12 @@
 <!--=============================================================================================================================-->
     <statBases>
 	<!--기본-->
-      <MarketValue>3000</MarketValue>
+      <MarketValue>2800</MarketValue>
       <Flammability>0.5</Flammability>
-      <MoveSpeed>5.2</MoveSpeed>
+      <MoveSpeed>5.0</MoveSpeed>
 	  <MentalBreakThreshold>0.2</MentalBreakThreshold>
       <ComfyTemperatureMax>20</ComfyTemperatureMax>
-      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 	  <ImmunityGainSpeed>1.0</ImmunityGainSpeed>
 	  <CarryingCapacity>75</CarryingCapacity>
 	  <MeatAmount>60</MeatAmount>
@@ -277,12 +277,12 @@
     <PsychicSensitivity>1.2</PsychicSensitivity>
   <!-- 전투 -->
       <MeleeDodgeChance>1.2</MeleeDodgeChance>
-      <MeleeHitChance>1</MeleeHitChance>
+      <MeleeHitChance>1.0</MeleeHitChance>
       <AimingDelayFactor>1.0</AimingDelayFactor>
-      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+      <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
 	<!--사교-->
 	  <NegotiationAbility>0.8</NegotiationAbility> <!--외교 영향력-->
-	  <SellPriceFactor>0.8</SellPriceFactor> <!--거래 가격 개선-->
+	  <SellPriceFactor>1</SellPriceFactor> <!--거래 가격 개선-->
 	  <SocialImpact>0.8</SocialImpact> <!--사회적 영향력-->
 	<!--제작-->
 	  <ButcheryMechanoidEfficiency>1.0</ButcheryMechanoidEfficiency> <!--메카노이드 분해 효율-->
@@ -291,12 +291,12 @@
 	  <!--<SmithingSpeed>1.0</SmithingSpeed>--> <!--제련 속도-->
 	  <GeneralLaborSpeed>1.0</GeneralLaborSpeed> <!--재단 속도-->
 	<!--조리-->
-	  <ButcheryFleshEfficiency>1.2</ButcheryFleshEfficiency> <!--도축 효율-->
-	  <ButcheryFleshSpeed>2.0</ButcheryFleshSpeed> <!--도축 속도-->
+	  <ButcheryFleshEfficiency>1.0</ButcheryFleshEfficiency> <!--도축 효율-->
+	  <ButcheryFleshSpeed>1.2</ButcheryFleshSpeed> <!--도축 속도-->
 	  <FoodPoisonChance>1.0</FoodPoisonChance> <!--식중독 확률-->
 	  <CookSpeed>1.0</CookSpeed> <!--조리 속도-->
 	<!--수면-->
-	  <RestRateMultiplier>1.25</RestRateMultiplier>
+	  <RestRateMultiplier>1.2</RestRateMultiplier>
 	<!--재배-->
 	  <PlantWorkSpeed>1.0</PlantWorkSpeed>
   <!--의학및연구-->
