@@ -453,7 +453,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>공포</label>
 		<labelNoun>공포</labelNoun>
-		<description>세상이 핑핑 돌고, 환부가 마치 고기덩어리처럼 보입니다.</description>
+		<description>세상이 밝아지며, 환부가 마치 고기덩어리처럼 보입니다.</description>
 		<defaultLabelColor>(0.7,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -467,7 +467,7 @@
 			<li>
                                 <minSeverity>0</minSeverity>
 				<statFactors>
-                                <
+                                <PainShockThreshold>1.25</PainShockThreshold>
 				</statFactors>
 			</li>
 		</stages>
