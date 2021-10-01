@@ -390,9 +390,15 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>34</power>
+        <power>24</power>
         <cooldownTime>3</cooldownTime>
       <armorPenetration>0.5</armorPenetration>
+         <extraMeleeDamages>
+          <li>
+            <def>MR_Shredded</def>
+            <amount>10</amount>
+          </li>
+        </extraMeleeDamages>
       </li>
     </tools>
           <equippedStatOffsets>
@@ -408,6 +414,66 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
+
+<!--뎀뎊-->
+   <DamageDef Name="CutBase">
+    <defName>MR_Shredded</defName>
+    <label>해체됨</label>
+    <workerClass>DamageWorker_Cut</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been cut to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSkin>Cut</hediffSkin>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0, 0</li>
+        <li>0.6, 1</li>
+        <li>0.9, 2</li>
+        <li>1, 3</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+   <additionalHediffs>
+				<li>
+					<hediff>MRH_Fear</hediff>
+					<severityPerDamageDealt>1</severityPerDamageDealt>
+					<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+				</li>
+			</additionalHediffs>
+  </DamageDef>
+  
+  <HediffDef>
+		<defName>MRH_Fear</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>공포</label>
+		<labelNoun>공포</labelNoun>
+		<description>세상이 핑핑 돌고, 환부가 마치 고기덩어리처럼 보입니다.</description>
+		<defaultLabelColor>(0.7,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-20</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+                                <minSeverity>0</minSeverity>
+				<statFactors>
+                                <
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+    <!--ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ-->
+  
 
   <!--<ThingDef Name="BaseWeaponNeolithic" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Neolithic</techLevel>
