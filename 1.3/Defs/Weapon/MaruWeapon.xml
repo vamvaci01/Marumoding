@@ -2004,25 +2004,59 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.6</drawSize>
     </graphicData>
-    <projectile>
-      <damageDef>RangedStab</damageDef>
-      <damageAmountBase>30</damageAmountBase>
-      <stoppingPower>2.5</stoppingPower>
-      <armorPenetrationBase>0.4</armorPenetrationBase>
-      <speed>30</speed>
-      <extraDamages>
-        <li>
-          <def>EMP</def>
-          <amount>1</amount>
-          <chance>1</chance>
-        </li>
-      </extraDamages>
-    </projectile>
-  </ThingDef>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>MR_AGBomb</damageDef>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <damageAmountBase>3</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <armorPenetrationBase>0.15</armorPenetrationBase>
+      <speed>30</speed>
+      <explosionRadius>4</explosionRadius>
+    <flyOverhead>False</flyOverhead>
+    </projectile>
+  </ThingDef> 
+
+<!--damege-->
+<DamageDef Name="MR_AGBomb">     
+<defName>MR_AGBomb</defName>     
+<label>Anti-Graviti FF</label>     
+<workerClass>DamageWorker_AddInjury</workerClass>     
+<externalViolence>true</externalViolence>     
+<isExplosive>true</isExplosive>     
+<deathMessage>{0} has died in the air.</deathMessage>     
+<hediff>Shredded</hediff>     
+<hediffSolid>Crack</hediffSolid> 
+<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>     
+<impactSoundType>Blunt</impactSoundType>     
+<armorCategory>Blunt</armorCategory> 
+<defaultDamage>5</defaultDamage>     
+<defaultStoppingPower>0.5</defaultStoppingPower>     
+<defaultArmorPenetration>1</defaultArmorPenetration>     
+<buildingDamageFactorImpassable>10</buildingDamageFactorImpassable> 
+<buildingDamageFactorPassable>8</buildingDamageFactorPassable>     
+<plantDamageFactor>4</plantDamageFactor>     
+<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>     
+<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>     
+<explosionCellFleck>BlastDry</explosionCellFleck>     
+<explosionColorCenter>(0.8, 0.9, 0.8)</explosionColorCenter>     
+<explosionColorEdge>(0.4, 1.0, 0.4)</explosionColorEdge>     
+<soundExplosion>Explosion_Bomb</soundExplosion>     
+<combatLogRules>Damage_Bomb</combatLogRules>   
+<additionalHediffs>
+<li>
+<hediff>MRH_Anti-Gravity</hediff>
+<severityPerDamageDealt>0.1</severityPerDamageDealt>
+<victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+</li>
+</additionalHediffs>
+</DamageDef>
+
   
   <!--사슬-->
   <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
- 
+ >
+
   <!--eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee덫eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-->
 
   <!--
