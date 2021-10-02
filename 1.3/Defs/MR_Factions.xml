@@ -39,6 +39,22 @@
 		<li>Cloth</li>
       </thingDefs>
     </apparelStuffFilter>
+
+    <allowedCultures>
+    </allowedCultures> 
+    <requiredMemes>
+    </requiredMemes>
+    <disallowedMemes>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
+<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation> 
+    <configurationListOrderPriority>32</configurationListOrderPriority>
+
+
   </FactionDef>
 
   
@@ -164,15 +180,31 @@
   <FactionDef ParentName="MaruFactionBase">
     <defName>MRF_Hyperborea</defName>
     <label>upper mountain</label>
-    <description>test.</description>
+    <description>Maru</description>
     <colorSpectrum>
       <li>(1, 1, 1)</li>
       <li>(1, 1, 1)</li>
     </colorSpectrum>
-    <startingGoodwill>-50~0</startingGoodwill>
     <naturalColonyGoodwill>-50~0</naturalColonyGoodwill>
 	<goodwillDailyGain>0.20</goodwillDailyGain>
     <goodwillDailyFall>0.20</goodwillDailyFall>
+
+<allowedCultures>
+    </allowedCultures> 
+    <requiredMemes>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
+<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation> 
+    <configurationListOrderPriority>32</configurationListOrderPriority>
+
   </FactionDef>
   
   
