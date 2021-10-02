@@ -9,6 +9,8 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<defaultFactionType>Maru_PlayerFaction</defaultFactionType>
+                <initialWillRange>0.3~1</initialWillRange>
+                <initialResistanceRange>20~28</initialResistanceRange>
 	</PawnKindDef>
 
 
@@ -47,7 +49,9 @@
 			<li>Advanced</li>
 		</techHediffsTags>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-	</PawnKindDef>
+	        <initialWillRange>0~0</initialWillRange>
+                <initialResistanceRange>13~20</initialResistanceRange>
+                </PawnKindDef>
 
 
 	<!-- 기본 -->
