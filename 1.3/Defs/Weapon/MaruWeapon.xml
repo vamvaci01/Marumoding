@@ -419,7 +419,7 @@
 <!--뎀뎊-->
    <DamageDef Name="CutBase">
     <defName>MR_Shredded</defName>
-    <label>해체됨</label>
+    <label>갈가리 찢어짐</label>
     <workerClass>DamageWorker_Cut</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been cut to death.</deathMessage>
@@ -453,7 +453,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>공포</label>
 		<labelNoun>공포</labelNoun>
-		<description>세상이 밝아지며, 환부가 마치 고기덩어리처럼 보입니다.</description>
+		<description>의지로는 완전히 극복할 수 없는 생리적 공포입니다.</description>
 		<defaultLabelColor>(0.7,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
@@ -573,6 +573,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MR_HandaxeO_Thrown</defaultProjectile>
         <warmupTime>1</warmupTime>
+        <burstShotCount>1</burstShotCount>
         <range>8</range>
         <soundCast>Shotmaruaxe_O</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -644,10 +645,10 @@
     <statBases>
       <WorkToMake>18000</WorkToMake>
       <Mass>4</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.81</AccuracyShort>
-      <AccuracyMedium>0.70</AccuracyMedium>
-      <AccuracyLong>0.62</AccuracyLong>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -658,7 +659,7 @@
         <li>MR_retrofittable</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>12</Crafting>
       </skillRequirements>
       <researchPrerequisite>MaruRB2</researchPrerequisite>
     </recipeMaker>
@@ -667,8 +668,10 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MR_HandaxeAO_Thrown</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>12</range>
+        <warmupTime>2</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <minRange>4</minRange>
+        <range>14</range>
         <soundCast>Shotmaruaxe_O</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
@@ -715,7 +718,7 @@
     <ThingDef ParentName="MaruBaseaxe_T">
     <defName>MR_HA_AT</defName>
     <label>Hand Axe : throwing</label>
-    <description>다양한 곳에 쓰이는 손도끼입니다.\n두가지 간섭장치를 병행해서 사용해 파괴력과 사정거리를 끌어올렸습니다.</description>
+    <description>다양한 곳에 쓰이는 손도끼입니다.\n두가지 간섭장치를 병행해서 사용해 파괴력과 연사력을 끌어올렸습니다.</description>
     <graphicData>
       <texPath>Things/Weapons/MR_HA_AT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -730,10 +733,10 @@
     <statBases>
       <WorkToMake>38000</WorkToMake>
       <Mass>4</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.81</AccuracyShort>
-      <AccuracyMedium>0.76</AccuracyMedium>
-      <AccuracyLong>0.72</AccuracyLong>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -753,8 +756,10 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>MR_HandaxeAT_Thrown</defaultProjectile>
-        <warmupTime>1</warmupTime>
-        <range>19</range>
+        <warmupTime>3</warmupTime>
+        <burstShotCount>10</burstShotCount>
+        <minRange>4</minRange>
+        <range>14</range>
         <soundCast>Shotmaruaxe_T</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
