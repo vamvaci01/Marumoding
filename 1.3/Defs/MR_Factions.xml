@@ -32,17 +32,6 @@
       <li>ClassicStart</li>
     </startingResearchTags>
 
-  <StyleItemTags>
-    <li>
-<tag>MR_Hair</tag>
-<baseWeight>1</baseWeight>
-<weightFactor>1</weightFactor>
-    </li>
-  </StyleItemTags>
-
-    <hairTags>
-      <li>Rural</li>
-    </hairTags>
     <apparelStuffFilter>
       <thingDefs>
 		<li>Cloth</li>
