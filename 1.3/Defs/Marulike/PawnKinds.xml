@@ -11,7 +11,14 @@
 		<defaultFactionType>Maru_PlayerFaction</defaultFactionType>
                 <initialWillRange>0.3~1</initialWillRange>
                 <initialResistanceRange>20~28</initialResistanceRange>
-	</PawnKindDef>
+                <StyleItemTags>
+                <li>
+                <tag>MRhair</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+                </li>
+                </StyleItemTags>
+	        </PawnKindDef>
 
 
 	<!-- 마루 플레이어 정착민 -->
