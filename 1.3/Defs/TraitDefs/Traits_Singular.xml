@@ -12,6 +12,93 @@
       </li>
     </degreeDatas>
   </TraitDef>
+
+<defName>MRT_Bodytrait</defName>
+    <degreeDatas>
+      <li>
+        <label>눈썰미</label>
+        <description>어떠한 물체든, 사건이든, 기술이든 모두 원인과 결과가 존재합니다./n{PAWN_nameDef}은 그런 인과관계를 파악하고 무언가를 체득하는데 이골이 났습니다.</description>
+        
+      </li>
+    </degreeDatas>
+
+<defName>MRT_Bodytrait</defName>
+    <degreeDatas>
+      <li>
+        <label>유연함</label>
+        <description>{PAWN_nameDef}의 몸은 선천적으로 뛰어난 유연성을 지니고 있습니다./n남들보다 튼튼하고 유연한 몸은 사냥에 있어 상당한 이점을 지닙니다.</description>
+        
+      </li>
+    </degreeDatas>
+
+<defName>MRT_Mentaltrait</defName>
+    <degreeDatas>
+      <li>
+        <label>독선</label>
+        <description>{PAWN_nameDef}은 스스로가 옳다고 생각합니다./n그 확고한 믿음은 마치 신앙심과 같이 자기 의지에 긍정적인 영향을 주지만, 남들의 의견을 무시하는 경향 또한 있습니다.</description>
+        
+      </li>
+    </degreeDatas>
+
+<defName>MRT_Mountaintrait</defName>
+    <degreeDatas>
+      <li>
+        <label>지도력</label>
+        <description>강한 지도력을 가진 인물은 항상 긍정적으로든 부정적으로든 주변 사람들에게 영향을 끼칩니다./n그런 인물이 어떤 길을 선택할지, 어떤 삶을 살아갈지는 아무도 모릅니다. 하지만 한가지 확실한건, 아무도 모르게 세상에 왔다가 가는 그런 평범한 인물은 되지 못할것이라는 겁니다. /n/n{PAWN_nameDef}은 선천적으로 그런 재능을 타고났습니다.</description>
+        
+      </li>
+    </degreeDatas>
+<defName>MRT_Eartrait</defName>
+    <degreeDatas>
+      <li>
+        <label>예민한 귀</label>
+        <description>{PAWN_nameDef}은 작은 소리에도 민감한 귀를 가지고 있습니다./n 소리에 예민하다는 점은 보금자리 밖에서의 생활에선 항상 득이 되지만, 잠에 깊게 들지 못한다는 단점 또한 지니고 있습니다.</description>
+        
+      </li>
+    </degreeDatas>
+
+<defName>MRT_Prototype</defName>
+    <degreeDatas>
+      <li>
+        <label>프로토타입</label>
+        <description>{PAWN_nameDef}은 실험적으로 배양된 마루입니다./n다른 마루들보다 월등히 뛰어난 신체능력을 지니고 있지만, 불완전한 설계로 만들어진 탓에 자가면역력이 매우 떨어집니다.</description>
+        
+      </li>
+    </degreeDatas>
+    
+<defName>MRT_MountainA</defName>
+    <degreeDatas>
+      <li>
+        <label>끝없는 탐구심</label>
+        <description>위업을 이룰 재능의 편린입니다.</description>
+        
+      </li>
+    </degreeDatas>
+    
+<defName>MRT_MountainB</defName>
+    <degreeDatas>
+      <li>
+        <label>지적 사명감</label>
+        <description>위업을 이룰 재능의 편린입니다.</description>
+        
+      </li>
+    </degreeDatas>
+<defName>MRT_MountainC</defName>
+    <degreeDatas>
+      <li>
+        <label>이어지는 유지</label>
+        <description>위업을 이룰 재능의 편린입니다.</description>
+        
+      </li>
+    </degreeDatas>
+<defName>MRT_MountainD</defName>
+    <degreeDatas>
+      <li>
+        <label>마모와 신념</label>
+        <description>위업을 이룰 재능의 편린입니다.</description>
+        
+      </li>
+    </degreeDatas>
     
   <!--<TraitDef>
     <defName>QuickSleeper</defName>
