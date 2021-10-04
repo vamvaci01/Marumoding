@@ -18,7 +18,10 @@
       <li>
         <label>눈썰미</label>
         <description>어떠한 물체든, 사건이든, 기술이든 모두 원인과 결과가 존재합니다./n{PAWN_nameDef}은 그런 인과관계를 파악하고 무언가를 체득하는데 이골이 났습니다.</description>
-        
+        <statOffsets>
+          <GlobalLearningFactor>0.25</GlobalLearningFactor>
+          
+        </statOffsets>
       </li>
     </degreeDatas>
 
