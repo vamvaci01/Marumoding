@@ -946,10 +946,10 @@
 
 <!-- 1 -->
 <AlienRace.BackstoryDef ParentName="MaruBackStory">
-  <defName>Maru_Hunter</defName>
+  <defName>Maru_HunterA</defName>
   <title>마루 사냥꾼</title>
   <titleShort>마루 사냥꾼</titleShort>
-  <baseDescription>마루 대부분은 성장하면서 사냥에 대한 깊은 갈망을 느낍니다.\n이 마루는 전문 사냥꾼으로서 다른 마루들에게 평소에 일정분의 식량을 받고, 근처에 고래 같은 위협적인 사냥감이 나타났을 때 대신 처리해주는 일을 하고 있습니다.</baseDescription>
+  <baseDescription>이 마루는 전문 사냥꾼으로서 다른 마루들에게 평소에 일정분의 식량을 받고, 근처에 위협적인 사냥감이 나타났을 때 대신 처리해주는 일을 하고 있습니다.</baseDescription>
   <slot>Adulthood</slot>
   <skillGains>
     <li>
@@ -972,9 +972,9 @@
 </AlienRace.BackstoryDef>
 
   <AlienRace.BackstoryDef ParentName="MaruBackStory">
-    <defName>Maru_mountainkeeper</defName>
-    <title>마루 산지기</title>
-    <titleShort>마루 산지기</titleShort>
+    <defName>Maru_HunterB</defName>
+    <title>마루 사냥꾼</title>
+    <titleShort>마루 사냥꾼</titleShort>
     <baseDescription>일부 마루는 성장 과정에서 사냥에 대한 깊은 갈망을 느낍니다.\n이 마루는 그 경향이 특히 강했으며, 더 만족스러운 사냥감을 찾기 위해 무리를 떠나 행성 이곳저곳을 떠돌아다니고 있습니다.</baseDescription>
     <slot>Adulthood</slot>
     <skillGains>
@@ -996,6 +996,170 @@
 	  <li>MR_Adult</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_HunterC</defName>
+    <title>마루 사냥꾼</title>
+    <titleShort>마루 사냥꾼</titleShort>
+    <baseDescription>{PAWN_nameDef}(은)는 사냥의 즐거움에 심취해 있습니다./n덫을 설치하고, 육포를 질겅거리며 한 자리에서 몇날밤을 지새우고, 핏자국을 쫒아 사냥감을 추적하고, 힘이 다한 사냥감의 숨을 거두는 그 모든 과정이 {PAWN_pronoun}에겐 즐거움입니다./n/n천직이라는 말이 이렇게 어올리는 마루가 또 있을까요.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MountainrangerA</defName>
+    <title>마루 산지기</title>
+    <titleShort>마루 산지기</titleShort>
+    <baseDescription>깊은 산, 땅의 끝이라고도 불리는 뒤틀린 골짜기에 {PAWN_nameDef}(은)는 은거하고 있습니다. /n선조의 기술을 통해 재현하는 데에는 성공했지만 작동원리는 아직도 밝혀지지 않은 여러 장치들을 연구하기 위해, 스스로 자원한 소수의 제자들과 이 골짜기로 왔습니다. /n/n{PAWN_pronoun}의 어린아이와 같이 순수한, 동시에 강박과도 궤를 같이하는 탐구욕은 항상 다른 마루들의 앞을 비춰주는 빛이자, 그들을 이끌어주는 길이 되었습니다. /n그들이 마주할 미래가 옳은 것일지는 아무도 모릅니다. 다만, 문명 또한 자전거와 같이 앞으로 나아가지 않으면 흔들릴 뿐이란 것만은 그들 모두가 공유하는 사실입니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MountainrangerB</defName>
+    <title>마루 산지기</title>
+    <titleShort>마루 산지기</titleShort>
+    <baseDescription>깊은 산, 흙과 생물과 기계들이 뒤섞여 풍화되는 곳에 {PAWN_nameDef}(은)는 은거하고 있습니다. /n여럿이서 움직이면 오히려 위험한 곳이기에, 맹인이 길을 짚듯 혼자 조심스럽게 유적을 조사하곤 합니다. /n/n혼자 있는 시간이 길어질수록 감정이 무뎌지는걸 느끼지만, 유적의 틈새로 들어오는 흑백이 산란하며 쪼개져 폐허의 환부를 물들이는 모습을 보고 있노라면, 두려움과 함께 알수없는 고양감－사명감이 떠오르곤 합니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_MountainrangerC</defName>
+    <title>마루 산지기</title>
+    <titleShort>마루 산지기</titleShort>
+    <baseDescription>깊은 산, 빛과 렌즈들이 서로를 교란시키며 신기루를 이루는 곳에 {PAWN_nameDef}(은)는 은거하고 있습니다./n자신을 따르는 제자들과 함께 유적을 조사하고 기록하지만, 이 조사가 언제 끝날지, 유의미한 결과가 나올지는 이곳의 그 누구도 알지 못합니다. 다만, {PAWN_pronoun} 스스로가 이곳에 오도록 만들고, 제자를 두게 하였으며, 그들을 통해 또다시 이어져 갈 {PAWN_possessive} 생각, 의지, 신념은 이 장소에 또 하나의 거대한 유적을 만들어낼 것입니다./n{PAWN_possessive} 제자들이 탐구하고, 받아들여야 할 과제로서 말이죠.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_mountainrangerD</defName>
+    <title>마루 산지기</title>
+    <titleShort>마루 산지기</titleShort>
+    <baseDescription>깊은 산, 온갖 유기물들이 흘러내리며 꿈틀거리는 곳에 {PAWN_nameDef}(은)는 은거하고 있습니다. /n인간이 상상할 수 있는 온갖 악취와 소음, 불길한 형태가 들끓는 곳에서, 오직 진실만을 쫒기위해 {PAWN_pronoun}는 스스로 마모되고 있습니다. /n{PAWN_possessive} 믿음에 대한 집착은, 스스로를 파멸시킬지언정, 결코 {PAWN_objective} 패배시키지 않을 것입니다.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <forcedTraits>
+      <li>
+        <defName>MR</defName>
+        <chance>100</chance>
+      </li>
+    </forcedTraits>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!--
+<AlienRace.BackstoryDef ParentName="MaruBackStory">
+    <defName>Maru_HunterC</defName>
+    <title>마루 사냥꾼</title>
+    <titleShort>마루 사냥꾼</titleShort>
+    <baseDescription> </baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+	<li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+	</li>
+	<li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+    </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>MRALL</li>
+	  <li>MR_Adult</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+-->
 
   <AlienRace.BackstoryDef ParentName="MaruBackStory">
     <defName>Maru_whaler</defName>
