@@ -91,7 +91,10 @@
       <li>
         <label>이어지는 유지</label>
         <description>위업을 이룰 재능의 편린입니다.</description>
-        
+         <statOffsets>
+         <NegotiationAbility>1.5</NegotiationAbility>
+	 <SocialImpact>1.5</SocialImpact>
+         </statOffsets>
       </li>
     </degreeDatas>
 <defName>MRT_MountainD</defName>
