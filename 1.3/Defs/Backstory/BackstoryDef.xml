@@ -1043,6 +1043,12 @@
     </workDisables>
     <forcedHediffs>
     </forcedHediffs>
+    <forcedTraits>
+      <li>
+        <defName>MRT_MountainA</defName>
+        <chance>100</chance>
+      </li>
+    </forcedTraits>
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
@@ -1069,6 +1075,12 @@
     </workDisables>
     <forcedHediffs>
     </forcedHediffs>
+    <forcedTraits>
+      <li>
+        <defName>MRT_MountainB</defName>
+        <chance>100</chance>
+      </li>
+    </forcedTraits>
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
@@ -1095,6 +1107,12 @@
     </workDisables>
     <forcedHediffs>
     </forcedHediffs>
+    <forcedTraits>
+      <li>
+        <defName>MRT_MountainC</defName>
+        <chance>100</chance>
+      </li>
+    </forcedTraits>
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
@@ -1123,7 +1141,7 @@
     </forcedHediffs>
     <forcedTraits>
       <li>
-        <defName>MR</defName>
+        <defName>MRT_MountainD</defName>
         <chance>100</chance>
       </li>
     </forcedTraits>
