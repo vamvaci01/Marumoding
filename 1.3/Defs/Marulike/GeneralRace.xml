@@ -331,8 +331,9 @@
   <!--채굴-->
    	<MiningSpeed>1.0</MiningSpeed>
 		<MiningYield>1.0</MiningYield>
-      
-      
+  <!--상단속도-->
+        <CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
+
     </statBases>
 <!--==맨손전투===================================================================================================================-->
     <tools>
