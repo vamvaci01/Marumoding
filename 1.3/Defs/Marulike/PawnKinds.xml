@@ -463,9 +463,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+        <li>MR_Mountain</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
