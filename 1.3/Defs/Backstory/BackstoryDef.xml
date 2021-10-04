@@ -1052,6 +1052,8 @@
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
+          <li>MR_Mountain</li>
+          <li>MR_MH</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -1084,6 +1086,8 @@
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
+          <li>MR_Mountain</li>
+          <li>MR_MH</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -1116,6 +1120,8 @@
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
+          <li>MR_Mountain</li>
+          <li>MR_MH</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -1148,6 +1154,8 @@
     <spawnCategories>
       <li>MRALL</li>
 	  <li>MR_Adult</li>
+          <li>MR_Mountain</li>
+          <li>MR_MH</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
