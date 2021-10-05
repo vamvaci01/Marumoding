@@ -29,9 +29,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>MRALL</li>
-					<li>MR_Child</li>
-					<li>MR_Adult</li>
+					<li>MR_MH</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>		
@@ -96,9 +94,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_Merchant</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -148,9 +144,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_MH</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -200,9 +194,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_Mech</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -252,9 +244,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_MH</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -306,9 +296,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_Hunter</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -359,9 +347,7 @@
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>MRALL</li>
-					<li>MR_Child</li>
-					<li>MR_Adult</li>
+					<li>MR_Hunter</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>				
@@ -411,9 +397,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_Deshiper</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -515,9 +499,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>MRALL</li>
-		  <li>MR_Child</li>
-		  <li>MR_Adult</li>
+          <li>MR_Hunter</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
