@@ -1280,7 +1280,7 @@
   <DamageDef Name="MR_Pulse_a">
 		<defName>MR_Pulse_a</defName>
 		<label>Pulse arrow</label>
-		<workerClass>TorgueMaru.Torgue_DamageWorker_AddInjury</workerClass>
+		<workerClass>TorgueAnty.TorgueAnty_DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<isExplosive>true</isExplosive>
 		<deathMessage>{0} has died in an Pulse.</deathMessage>
