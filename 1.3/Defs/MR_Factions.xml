@@ -142,7 +142,6 @@
         <!-- 방어군 -->
            <kindDef>Settlement</kindDef>
         <options>
-          <MRP_MountainRanger>1</MRP_MountainRanger>
           <MRP_Deciphers>8</MRP_Deciphers>
           <MRP_Hunter>20</MRP_Hunter>
         </options>
