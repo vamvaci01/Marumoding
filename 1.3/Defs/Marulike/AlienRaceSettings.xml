@@ -43,7 +43,6 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-                <li>MRP_MountainRanger</li>
 								<li>MRP_Hunter</li>
                 <li>MRP_Caravan</li>
               </kindDefs>
