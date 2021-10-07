@@ -235,7 +235,7 @@
     </recipeMaker>
   </ThingDef>
   <!--뎀뎊-->
-   <DamageDef Name="CutBase">
+   <DamageDef Name="CutBaseC">
     <defName>MR_Crystallization</defName>
     <label>결정화</label>
     <workerClass>DamageWorker_Cut</workerClass>
@@ -417,7 +417,7 @@
 
 
 <!--뎀뎊-->
-   <DamageDef Name="CutBase">
+   <DamageDef Name="CutBaseS">
     <defName>MR_Shredded</defName>
     <label>갈가리 찢어짐</label>
     <workerClass>DamageWorker_Cut</workerClass>
