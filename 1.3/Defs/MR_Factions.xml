@@ -182,10 +182,7 @@
       <li>(1, 1, 1)</li>
       <li>(1, 1, 1)</li>
     </colorSpectrum>
-    <naturalColonyGoodwill>-50~0</naturalColonyGoodwill>
-	<goodwillDailyGain>0.20</goodwillDailyGain>
-    <goodwillDailyFall>0.20</goodwillDailyFall>
-
+    
 <allowedCultures>
     </allowedCultures> 
     <requiredMemes>
