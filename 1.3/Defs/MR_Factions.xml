@@ -59,7 +59,7 @@
   
   <!-- 팩션 -->
 
-  <FactionDef ParentName="HumanFactionBase" Name="MaruFactionBase" Abstract="True">
+  <FactionDef ParentName="Mr_PlayerFactionBase" Name="MaruFactionBase" Abstract="True">
 		<pawnSingular>Maru</pawnSingular>
 		<pawnsPlural>Snow Leopards</pawnsPlural>
 		<listOrderPriority>30</listOrderPriority>
