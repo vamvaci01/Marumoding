@@ -23,6 +23,7 @@
 			<li>
 				<categories>
 					<li>MR_MH</li>
+                                        <li>MR_MHchild</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>		
@@ -88,6 +89,7 @@
       <li>
         <categories>
           <li>MR_Merchant</li>
+      <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -138,6 +140,7 @@
       <li>
         <categories>
           <li>MR_MH</li>
+      <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -188,6 +191,7 @@
       <li>
         <categories>
           <li>MR_Mech</li>
+      <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -238,6 +242,7 @@
       <li>
         <categories>
           <li>MR_MH</li>
+      <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -290,6 +295,7 @@
       <li>
         <categories>
           <li>MR_Hunter</li>
+      <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -341,6 +347,7 @@
 			<li>
 				<categories>
 					<li>MR_Hunter</li>
+                                        <li>MR_MHchild</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>				
@@ -391,6 +398,7 @@
       <li>
         <categories>
           <li>MR_Deshiper</li>
+          <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -441,6 +449,7 @@
       <li>
         <categories>
         <li>MR_Mountain</li>
+        <li>MR_MHchild</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -492,6 +501,7 @@
     <backstoryFiltersOverride>
       <li>
         <categories>
+          <li>MR_MHchild</li>
           <li>MR_Hunter</li>
         </categories>
       </li>
