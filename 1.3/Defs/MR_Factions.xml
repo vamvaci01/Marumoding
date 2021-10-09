@@ -76,9 +76,7 @@
       <li>Outlander</li>
 		</backstoryCategories>
 		<geneticVariance>0.7</geneticVariance>
-		<hairTags>
-      <li>Urban</li>
-		</hairTags>
+		
 		<caravanTraderKinds>
       <li>Caravan_Outlander_BulkGoods</li>
       <li>Caravan_Outlander_CombatSupplier</li>
