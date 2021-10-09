@@ -413,6 +413,14 @@
           <li>(3, 0)</li>
 				</points>
       </litterSizeCurve>
+
+<!--
+<lifeStage>
+<
+<caravanRideable>true</caravanRideable>
+<lifeStage>
+-->
+
       <lifeStageAges>
         <li>
           <def>HumanlikeBaby</def>
