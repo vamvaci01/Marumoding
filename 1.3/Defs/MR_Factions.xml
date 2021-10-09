@@ -93,6 +93,15 @@
 			<min>-60</min>
 			<max>50</max>
 		</allowedArrivalTemperatureRange>
+
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+
+    <raidLootMaker>MaruRaidLootMaker</raidLootMaker>
+
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
 				<li>(0,35)</li>
@@ -199,6 +208,19 @@
 
   </FactionDef>
   
+<ThingSetMakerDef>
+    <defName>MaruRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MR_sarira</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
   
   
 </Defs>
