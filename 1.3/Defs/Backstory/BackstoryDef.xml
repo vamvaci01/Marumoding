@@ -67,7 +67,7 @@
       <li>MR_Hunter</li> -모성
       <li>MR_MW</li> -중세
       <li>MR_GW</li> -번화
-      <li>MR_SP</li> -우주
+      <li>MR_MHchild</li> -모성 유아기
   --><!-- 마루 배양설표 -->
 
   <!-- 유년기 -->
@@ -79,7 +79,7 @@
 		<defName>Maru_MH_CulturedBaby</defName>
 		<title>마루 배양설표</title>
 		<titleShort>배양설표</titleShort>
-		<baseDescription>[PAWN_nameDef]의 첫 번째 기억은 어두컴컴한 인큐베이터 속입니다. 아무것도 모르는 채로 얼어붙은 모성에 내던져진 [PAWN_pronoun]은 어떻게든 스스로 살아남는 법을 찾아냈습니다.</baseDescription>
+		<baseDescription>[Pawn_nameDef]의 첫 번째 기억은 어두컴컴한 인큐베이터 속입니다. 아무것도 모르는 채로 얼어붙은 모성에 내던져진 [PAWN_pronoun]은 어떻게든 스스로 살아남는 법을 찾아냈습니다.</baseDescription>
 		<slot>Childhood</slot>
 		<skillGains>
       <li>
@@ -115,6 +115,7 @@
 			<li>MRALL</li>
 			<li>MR_MH</li>
 			<li>MR_Child</li>
+      <li>MR_MHchild</li>
 		</spawnCategories>
 	</AlienRace.BackstoryDef>
 
@@ -123,7 +124,7 @@
     <defName>Maru_MH_Vagabond</defName>
     <title>마루 모성 방랑자</title>
     <titleShort>방랑자</titleShort>
-    <baseDescription>얼어붙은 모성, 검게 타버린 솟대들 사이에서 [PAWN_nameDef]은 깨어났습니다. 비록 그 전에 어떤 일이 있었는지는 하나도 떠올릴 수 없었지만, 단 한 가지, 절망적인 상황에서 낙천적으로 살아가는 방법만은 알고 있었습니다.</baseDescription>
+    <baseDescription>얼어붙은 모성, 검게 타버린 솟대들 사이에서 [PAWN_nameDef](은)는 깨어났습니다. 비록 그 전에 어떤 일이 있었는지는 하나도 떠올릴 수 없었지만, 단 한 가지, 절망적인 상황에서 낙천적으로 살아가는 방법만은 알고 있었습니다.</baseDescription>
     <slot>Childhood</slot>
     <skillGains>
       <li>
@@ -151,6 +152,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -159,7 +161,7 @@
     <defName>Maru_MH_Bookworm</defName>
     <title>마루 책벌레</title>
     <titleShort>책벌레</titleShort>
-    <baseDescription>[PAWN_nameDef]은 젖을 떼고 난 뒤부터 항상 종이 무더기에 파묻혀 살았습니다. 그 척박한 모성에서 피 냄새보다 종이 냄새에 익숙한 몇 안 되는 마루 중 하나입니다.</baseDescription>
+    <baseDescription>[PAWN_nameDef](은)는 젖을 떼고 난 뒤부터 항상 종이 무더기에 파묻혀 살았습니다. 그 척박한 모성에서 피 냄새보다 종이 냄새에 익숙한 몇 안 되는 마루 중 하나입니다.</baseDescription>
     <slot>Childhood</slot>
     <skillGains>
       <li>
@@ -181,6 +183,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -223,6 +226,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -231,7 +235,7 @@
     <defName>Maru_MH_LittleEngineer</defName>
     <title>마루 공학도</title>
     <titleShort>공학도</titleShort>
-    <baseDescription>[PAWN_nameDef]은 어렸을 때부터 유난히 기계에 많은 관심을 보였습니다. 망가진 배관들을 손톱으로 자르고 이리저리 묶어 처음으로 작동하는 무언가를 만들었을 때의 성취감은 그 후의 [PAWN_pronoun]가 선택하는 모든 일에 큰 영향을 주었습니다.</baseDescription>
+    <baseDescription>[PAWN_nameDef](은)는 어렸을 때부터 유난히 기계에 많은 관심을 보였습니다. 망가진 배관들을 손톱으로 자르고 이리저리 묶어 처음으로 작동하는 무언가를 만들었을 때의 성취감은 그 후의 [PAWN_pronoun]가 선택하는 모든 일에 큰 영향을 주었습니다.</baseDescription>
     <slot>Childhood</slot>
     <skillGains>
       <li>
@@ -255,6 +259,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -291,6 +296,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -327,6 +333,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -335,7 +342,7 @@
     <defName>Maru_MH_SickChild</defName>
     <title>마루 병약한 아이</title>
     <titleShort>병약한 아이</titleShort>
-    <baseDescription>척박한 마루들의 모성에서는 병약하게 태어난 아이는 버려집니다. [PAWN_nameDef]의 부모 또한 다른 마루들과 별반 다를 바 없는 선택을 했고, [PAWN_pronoun]은 약한 몸으로 얼어붙은 행성에서 살아남기 위해 더욱더 영악해져야 했습니다.</baseDescription>
+    <baseDescription>척박한 마루들의 모성에서는 병약하게 태어난 아이는 버려집니다. [PAWN_nameDef]의 부모 또한 다른 마루들과 별반 다를 바 없는 선택을 했고, [PAWN_pronoun]는 약한 몸으로 얼어붙은 행성에서 살아남기 위해 더욱더 영악해져야 했습니다.</baseDescription>
     <slot>Childhood</slot>
     <skillGains>
       <li>
@@ -370,6 +377,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -406,6 +414,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -442,6 +451,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -478,6 +488,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
@@ -514,10 +525,11 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
-  <!-- 마루 솟대 지킴이 -->
+  <!-- 마루 솟대 지킴이
   <AlienRace.BackstoryDef ParentName="MaruBackStory">
     <defName>Maru_MH_Sotdaekeeper</defName>
     <title>마루 솟대 지킴이</title>
@@ -551,7 +563,7 @@
       <li>MR_MH</li>
 	  <li>MR_Child</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AlienRace.BackstoryDef> -->
 
   <!-- 마루 정상배양	-->
   <AlienRace.BackstoryDef ParentName="MaruBackStory">
@@ -614,6 +626,7 @@
       <li>MRALL</li>
       <li>MR_MH</li>
 	  <li>MR_Child</li>
+      <li>MR_MHchild</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
   
