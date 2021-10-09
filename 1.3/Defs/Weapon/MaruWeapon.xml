@@ -1932,7 +1932,7 @@
 <ThingDef ParentName="MaruBaseHarpoon_T">
     <defName>MR_WH_BT</defName>
     <label>Whaling Harpoon : Advanced Anti-Gravity</label>
-    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n외장된 장치를 이용해 일시적으로 적들의 움직임을 무력화합니다.</description>
+    <description>큰 동물을 잡을 때 사용하는 사냥용 작살입니다.\n외장된 장치를 이용해 적들의 움직임을 무력화합니다.</description>
     <graphicData>
       <texPath>Things/Weapons/MR_WH_BT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -2018,7 +2018,7 @@
   </ThingDef> 
 
 <!--damege-->
-<DamageDef Name="MR_AGBomb">     
+<DamageDef ParentName="Bomb">  
 <defName>MR_AGBomb</defName>     
 <label>Anti-Graviti FF</label>     
 <workerClass>DamageWorker_AddInjury</workerClass>     
