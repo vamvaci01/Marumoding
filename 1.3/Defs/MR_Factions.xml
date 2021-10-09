@@ -120,19 +120,6 @@
           <MRP_fangs>20</MRP_fangs>
         </options> 
       </li>
-    <!-- 야전군 정규군 mix -->
-    <!--  <li>
-        <kindDef>Combat</kindDef>
-        <commonality>35</commonality>
-        <options>
-          <RB_SubOfficer>1</RB_SubOfficer>
-          <RB_FSapper>5</RB_FSapper>
-          <RB_FRifle>12</RB_FRifle>
-          <RB_FMachinegunner>5</RB_FMachinegunner>
-          <RB_FSniper>6</RB_FSniper>
-          <RB_RGunner>11</RB_RGunner>
-        </options>
-      </li> -->
       <li>
         <!-- 정규군only -->
         <kindDef>Combat</kindDef>
@@ -142,7 +129,6 @@
         </disallowedStrategies>
         <options>
           <MRP_fangs>20</MRP_fangs>
-		  <MRP_MountainRanger>10</MRP_MountainRanger>
         </options>
       </li>
       <li>
