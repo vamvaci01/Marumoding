@@ -414,12 +414,29 @@
 				</points>
       </litterSizeCurve>
 
-<!--
-<lifeStage>
-<
-<caravanRideable>true</caravanRideable>
-<lifeStage>
--->
+<!--라이프스테이지-->
+
+ <LifeStageDef>
+    <defName>MarulikeTeenager</defName>
+    <label>teenager</label>
+    <adjective>teenage</adjective>
+    <reproductive>true</reproductive>
+    <bodySizeFactor>0.85</bodySizeFactor>
+    <healthScaleFactor>0.90</healthScaleFactor>
+    <meleeDamageFactor>0.75</meleeDamageFactor>
+    <statFactors>
+      <MoveSpeed>0.95</MoveSpeed>
+    </statFactors>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef>
+
+  <LifeStageDef>
+    <defName>MarulikeAdult</defName>
+    <label>adult</label>
+    <visible>false</visible>
+    <reproductive>true</reproductive>
+    <caravanRideable>true</caravanRideable>
+  </LifeStageDef> 
 
       <lifeStageAges>
         <li>
@@ -435,11 +452,11 @@
           <minAge>4</minAge>
         </li>
         <li>
-          <def>HumanlikeTeenager</def>
+          <def>MarulikeTeenager</def>
           <minAge>12</minAge>
         </li>
         <li>
-          <def>HumanlikeAdult</def>
+          <def>MarulikeAdult</def>
           <minAge>18</minAge>
         </li>
       </lifeStageAges>
