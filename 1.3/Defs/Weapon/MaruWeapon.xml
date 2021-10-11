@@ -2018,7 +2018,7 @@
   </ThingDef> 
 
 <!--damege-->
-<DamageDef ParentName="Bomb">  
+<DamageDef Name="MR_AGBomb">  
 <defName>MR_AGBomb</defName>     
 <label>Anti-Graviti FF</label>     
 <workerClass>DamageWorker_AddInjury</workerClass>     
