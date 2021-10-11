@@ -1263,8 +1263,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.1</drawSize>
 		</graphicData>
-		<thingClass>TorgueMaru.Projectile_Torgue_Rocket</thingClass>
-		<projectile Class="TorgueMaru.TorgueProjectileProps">
+		<thingClass>TorgueAnty.Projectile_Torgue_Rocket</thingClass>
+		<projectile Class="TorgueAnty.TorgueProjectileProps">
 			<speed>30</speed>
       <flyOverhead>True</flyOverhead>
 			<damageDef>MR_Pulse_a</damageDef>
@@ -2018,7 +2018,7 @@
   </ThingDef> 
 
 <!--damege-->
-<DamageDef Name="MR_AGBomb">  
+<DamageDef Name="Bomb">  
 <defName>MR_AGBomb</defName>     
 <label>Anti-Graviti FF</label>     
 <workerClass>DamageWorker_AddInjury</workerClass>     
