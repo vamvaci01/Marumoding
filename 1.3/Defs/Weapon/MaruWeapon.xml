@@ -1993,10 +1993,10 @@
         <power>14</power>
         <cooldownTime>2</cooldownTime>
       </li>
-    </tools>
+	</tools>
   <equippedAngleOffset>40</equippedAngleOffset>
   </ThingDef>
-  <ThingDef ParentName="BaseProjectileNeolithic">
+  <ThingDef ParentName="BaseProjectileNeolithic>
     <defName>MR_WhalingHarpoonBT_Thrown</defName>
     <label>Whaling Harpoon</label>
     <graphicData>
@@ -2018,7 +2018,7 @@
   </ThingDef> 
 
 <!--damege-->
-<DamageDef Name="Bomb">  
+<DamageDef Name="MR_AGBomb">  
 <defName>MR_AGBomb</defName>     
 <label>Anti-Graviti FF</label>     
 <workerClass>DamageWorker_AddInjury</workerClass>     
