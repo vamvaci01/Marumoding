@@ -133,4 +133,9 @@
     </styleTags>
   </HairDef>
 
+  <StyleItemCategoryDef>
+    <defName>MRhair</defName>
+    <label>MRhair</label>
+  </StyleItemCategoryDef>
+  
 </Defs>
