@@ -428,11 +428,11 @@
           <minAge>4</minAge>
         </li>
         <li>
-          <def>MarulikeTeenager</def>
+          <def>MR_Teenager</def>
           <minAge>12</minAge>
         </li>
         <li>
-          <def>MarulikeAdult</def>
+          <def>MR_Adult</def>
           <minAge>18</minAge>
         </li>
       </lifeStageAges>
@@ -512,8 +512,8 @@
 
 <!--라이프스테이지-->
 
- <LifeStageDef>
-    <defName>MarulikeTeenager</defName>
+  <LifeStageDef>
+    <defName>MR_Teenager</defName>
     <label>teenager</label>
     <adjective>teenage</adjective>
     <reproductive>true</reproductive>
@@ -527,7 +527,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>MarulikeAdult</defName>
+    <defName>MR_Adult</defName>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
