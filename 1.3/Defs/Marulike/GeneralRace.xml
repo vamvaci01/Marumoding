@@ -523,7 +523,6 @@
     <statFactors>
       <MoveSpeed>0.95</MoveSpeed>
     </statFactors>
-    <caravanRideable>true</caravanRideable>
   </LifeStageDef>
 
   <LifeStageDef>
@@ -531,7 +530,6 @@
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
-    <caravanRideable>true</caravanRideable>
   </LifeStageDef> 
 
 </Defs>
